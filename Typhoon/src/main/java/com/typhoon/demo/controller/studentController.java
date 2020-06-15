@@ -22,9 +22,11 @@ public class studentController {
     @Autowired
     private stuServiceImpl stuService;
     @RequestMapping("/stu/test")
-    public String test() {
-        student t = stuService.login("Faultz", "19981001");
-        return t.getStuUsername();
+    public JSONObject test() {
+        //student t = stuService.login("Faultz", "19981001");
+        JSONObject ret = new JSONObject();
+        ret.put("test", "test");
+        return ret;
     }
     @RequestMapping("/stu/login")
     public JSONObject login(@RequestBody String string_data, HttpServletRequest request, HttpServletResponse response) {
