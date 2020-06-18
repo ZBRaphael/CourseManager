@@ -27,4 +27,8 @@
     <string name="string_local">地点：</string>
     <string name="string_teacher">老师：</string>
     <string name="string_course">课程名</string>
+    <string name="string_issign">已签到</string>
+    <string name="string_notsign">未签到</string>
+    <string name="string_isselected">已选课</string>
+    <string name="string_notselected">未选课</string>
 </resources>

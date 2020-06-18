@@ -6,72 +6,71 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+8-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+9-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:4:1-62
-11-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:4:18-60
+11-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:4:1-62
+11-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:4:18-60
 12
 13    <application
-13-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:5:5-25:19
+13-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:5:5-25:19
 14        android:allowBackup="true"
-14-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:6:9-35
+14-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/0b96859a3cdf2530aa3d77dcfaeaf2fb/core-1.2.0/AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:7:9-43
+17-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:7:9-43
 18        android:label="@string/app_name"
-18-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:8:9-41
+18-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:8:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:9:9-54
+19-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:9:9-54
 20        android:supportsRtl="true"
-20-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:10:9-35
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:11:9-40
-23        <activity
-23-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:12:9-20:20
-24            android:name="com.example.startrace.ui.activity.SplashActivity"
-24-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:13:13-55
-25            android:theme="@style/AppTheme.FullScreen" >
-25-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:14:13-55
-26            <intent-filter>
-26-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:16:13-19:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:17:17-68
-27-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:17:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:18:17-76
-29-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:18:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity android:name="com.example.startrace.ui.activity.LoginActivity" />
-32-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:21:9-62
-32-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:21:19-60
-33        <activity android:name="com.example.startrace.ui.activity.MainActivity" />
-33-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:22:9-61
-33-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:22:19-59
-34        <activity android:name="com.example.startrace.ui.activity.SettingActivity" />
-34-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:23:9-64
-34-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:23:19-62
-35        <activity android:name="com.example.startrace.ui.activity.AboutActivity" />
-35-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:24:9-62
-35-->/Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:24:19-60
-36
-37        <provider
-37-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-38            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-39            android:authorities="com.example.startrace.lifecycle-process"
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-40            android:exported="false"
-40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-41            android:multiprocess="true" />
-41-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-42    </application>
-43
-44</manifest>
+20-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:10:9-35
+21        android:theme="@style/AppTheme" >
+21-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:11:9-40
+22        <activity
+22-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:12:9-20:20
+23            android:name="com.example.startrace.ui.activity.SplashActivity"
+23-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:13:13-55
+24            android:theme="@style/AppTheme.FullScreen" >
+24-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:14:13-55
+25            <intent-filter>
+25-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:16:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:17:17-68
+26-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:17:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:18:17-76
+28-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity android:name="com.example.startrace.ui.activity.LoginActivity" />
+31-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:21:9-62
+31-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:21:19-60
+32        <activity android:name="com.example.startrace.ui.activity.MainActivity" />
+32-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:22:9-61
+32-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:22:19-59
+33        <activity android:name="com.example.startrace.ui.activity.SettingActivity" />
+33-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:23:9-64
+33-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:23:19-62
+34        <activity android:name="com.example.startrace.ui.activity.AboutActivity" />
+34-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:24:9-62
+34-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:24:19-60
+35
+36        <provider
+36-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+37            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+38            android:authorities="com.example.startrace.lifecycle-process"
+38-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+39            android:exported="false"
+39-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+40            android:multiprocess="true" />
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+41    </application>
+42
+43</manifest>

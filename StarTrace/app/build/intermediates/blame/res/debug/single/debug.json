@@ -1,418 +1,422 @@
 [
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_home_icon.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_home_icon.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_03.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_03.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_music_titlebar_bg.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/music_titlebar_bg.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yuelist.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_yuelist.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_yue.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_vlist_unselect.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_vlist_unselect.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/toolbar.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_gallery.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_gallery.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_slideshow.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_slideshow.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_music_default_bg.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/music_default_bg.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_mv.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_mv.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_comment_p.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_comment_p.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue_comment_p.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_yue_comment_p.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_04.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_04.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_video.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_video.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_video_default_icon.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/video_default_icon.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_live_new.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_live_new.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_project.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_project.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_base_left_button_normal.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/base_left_button_normal.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_item_transtop.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/item_transtop.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_setting.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/activity_setting.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_02.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_02.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_arrow_upward_white_18dp.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_arrow_upward_white_18dp.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_05.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_05.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_activity.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_activity.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_playlist.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_playlist.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_ad.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_ad.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_content_main.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/content_main.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_item_gallery.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/item_gallery.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_09.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_09.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_empty_logo.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/empty_logo.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_content_main.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/content_main.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_camera.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_camera.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue_p.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_yue_p.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yuelist_p.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_yuelist_p.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_relative_mv.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_relative_mv.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_video.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_video.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_camera.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_camera.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_gallery.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_gallery.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/xml_setting.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/xml/setting.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yuelist.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_yuelist.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_item_home.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/item_home.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue_comment.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_yue_comment.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_fragment_gallery.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/fragment_gallery.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_02.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_02.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_comment_p.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_comment_p.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_gallery.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_gallery.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_about.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/activity_about.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_fragment_gallery.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/fragment_gallery.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_base_left_button_pressed.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/base_left_button_pressed.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_slideshow.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_slideshow.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/fragment_home.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_mv.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_mv.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_activity.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_activity.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_slideshow.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_slideshow.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_mv_unselect.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_mv_unselect.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_05.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_05.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/xml_setting.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/xml/setting.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_star.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_star.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_comment.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_comment.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_app_bar_main.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/app_bar_main.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_comment.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_comment.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_comment_bg.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/comment_bg.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_slideshow.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_slideshow.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_fragment_slideshow.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/fragment_slideshow.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_camera.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_camera.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_arrow_upward_white_18dp.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_arrow_upward_white_18dp.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_item_transtop.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/item_transtop.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue_p.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_yue_p.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_empty_logo.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/empty_logo.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable_splash_bg.jpeg.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/drawable/splash_bg.jpeg"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/menu/main.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_live.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_live.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_app_bar_main.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/app_bar_main.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_mvlist_unselect.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_mvlist_unselect.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_camera.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_camera.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_gallery.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_gallery.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_gallery.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_gallery.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_07.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_07.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_slideshow.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_slideshow.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_gallery.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_gallery.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/activity_splash.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_fanart.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_fanart.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_base_left_button_pressed.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/base_left_button_pressed.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_slideshow.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_slideshow.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue_comment.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_yue_comment.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_camera.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_camera.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_relative_mv_p.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_relative_mv_p.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_08.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_08.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_gallery.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_gallery.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_slideshow.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_slideshow.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_slideshow.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_slideshow.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_about.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/activity_about.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_vlist_unselect.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_vlist_unselect.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_ad.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_ad.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_gallery.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_gallery.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_camera.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_camera.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/fragment_home.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_star.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_star.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_gallery.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_gallery.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_home_icon.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_home_icon.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_relative_mv.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_relative_mv.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_video_default_icon.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/video_default_icon.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_gallery.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_gallery.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_playlist.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_playlist.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_camera.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_camera.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_mv_p.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_mv_p.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_01.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_01.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_project.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_project.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_gallery.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_gallery.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_camera.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_camera.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_07.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_07.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yuelist_p.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_yuelist_p.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_music_titlebar_bg.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/music_titlebar_bg.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_slideshow.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_slideshow.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_comment_bg.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/comment_bg.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_fragment_slideshow.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/fragment_slideshow.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_slideshow.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_slideshow.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_slideshow.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_slideshow.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_yue.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_live_new.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_live_new.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/toolbar.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_08.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_08.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_relative_mv_p.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/player_relative_mv_p.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_program.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_program.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_06.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_06.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_09.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_09.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_slideshow.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_slideshow.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_setting.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/activity_setting.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_splash_bg.jpeg.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xxhdpi/splash_bg.jpeg"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_camera.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_camera.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_slideshow.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_slideshow.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_camera.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_camera.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_mvlist_unselect.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_mvlist_unselect.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_bulletin.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_bulletin.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/layout/activity_splash.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_camera.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_camera.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_bulletin.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/home_page_bulletin.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/activity_login.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_bottom_mv_unselect.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_bottom_mv_unselect.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_program.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_program.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/layout_item_home.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/layout/item_home.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_slideshow.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_slideshow.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_gallery.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_gallery.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_gallery.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_gallery.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_04.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_04.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_base_left_button_normal.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/base_left_button_normal.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_camera.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_camera.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_gallery.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_gallery.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_live.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_live.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_06.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_06.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_camera.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_camera.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_camera.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_camera.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_mv_p.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_mv_p.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/drawable_splash_bg.jpeg.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/drawable/splash_bg.jpeg"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/xml_bottombar_tabs.xml.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/xml/bottombar_tabs.xml"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_music_default_bg.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/music_default_bg.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_01.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_01.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_page_fanart.png.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-hdpi/home_page_fanart.png"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_audio_anim_03.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/audio_anim_03.png"
     },
     {
-        "merged": "/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_splash_bg.jpeg.flat",
-        "source": "/Users/zhangbo/Desktop/StarTrace/app/src/main/res/mipmap-xxhdpi/splash_bg.jpeg"
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/mipmap-hdpi_player_yue_comment_p.png.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/mipmap-hdpi/player_yue_comment_p.png"
+    },
+    {
+        "merged": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/build/intermediates/res/merged/debug/xml_bottombar_tabs.xml.flat",
+        "source": "/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/res/xml/bottombar_tabs.xml"
     }
 ]

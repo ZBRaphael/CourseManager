@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [com.roughike:bottom-bar:2.3.1] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/b0aa26951bb24f5bbebf1bbae506ea47/jetified-bottom-bar-2.3.1/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/78fb97ede160259d024e7fc2f9def4fc/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/07d91a6f02149585995d851c56f12844/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -44,29 +44,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/zhangbo/.gradle/ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/72bdf876e72fb9973c917e9fd6471eba/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/2cf8b09fa7eefbd4af44cbcfa92124bc/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/a609f666eaf9da5777e80facded89453/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:3:5-36
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:4:1-62
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:4:1-62
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:4:18-60
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:4:18-60
 application
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:5:5-25:19
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:5:5-25:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/78fb97ede160259d024e7fc2f9def4fc/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/78fb97ede160259d024e7fc2f9def4fc/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/86a5fee14bcfd3e0a71e8cb1c12b4112/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
@@ -82,53 +82,53 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/zhangbo/.g
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/0b96859a3cdf2530aa3d77dcfaeaf2fb/core-1.2.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.startrace.ui.activity.SplashActivity
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:12:9-20:20
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:12:9-20:20
 	android:theme
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:14:13-55
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:14:13-55
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:13:13-55
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:13:13-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:16:13-19:29
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:17:17-68
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:17:17-68
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:18:17-76
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:18:17-76
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.example.startrace.ui.activity.LoginActivity
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:21:9-62
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:21:9-62
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:21:19-60
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:21:19-60
 activity#com.example.startrace.ui.activity.MainActivity
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:22:9-61
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:22:9-61
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:22:19-59
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:22:19-59
 activity#com.example.startrace.ui.activity.SettingActivity
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:23:9-64
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:23:9-64
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:23:19-62
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:23:19-62
 activity#com.example.startrace.ui.activity.AboutActivity
-ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:24:9-62
+ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:24:9-62
 	android:name
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml:24:19-60
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:24:19-60
 uses-sdk
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 MERGED from [com.roughike:bottom-bar:2.3.1] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/b0aa26951bb24f5bbebf1bbae506ea47/jetified-bottom-bar-2.3.1/AndroidManifest.xml:8:5-10:41
 MERGED from [com.roughike:bottom-bar:2.3.1] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/b0aa26951bb24f5bbebf1bbae506ea47/jetified-bottom-bar-2.3.1/AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/78fb97ede160259d024e7fc2f9def4fc/material-1.0.0/AndroidManifest.xml:20:5-44
@@ -209,16 +209,16 @@ MERGED from [androidx.print:print:1.0.0] /Users/zhangbo/.gradle/caches/transform
 MERGED from [androidx.print:print:1.0.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/2cf8b09fa7eefbd4af44cbcfa92124bc/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/a609f666eaf9da5777e80facded89453/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/a609f666eaf9da5777e80facded89453/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/zhangbo/Desktop/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 	android:authorities

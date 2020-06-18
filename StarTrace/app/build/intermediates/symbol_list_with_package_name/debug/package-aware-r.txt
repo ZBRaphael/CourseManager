@@ -1308,6 +1308,9 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id select_card_date
+id select_card_loacl
+id select_card_teacher
 id select_dialog_listview
 id selected
 id shifting
@@ -1316,6 +1319,7 @@ id showCustom
 id showHome
 id showTitle
 id shy
+id signin
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1350,7 +1354,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id text_gallery
 id text_input_password_toggle
 id text_slideshow
 id textinput_counter
@@ -1468,6 +1471,7 @@ layout design_text_input_password_icon
 layout fragment_gallery
 layout fragment_home
 layout fragment_slideshow
+layout item_gallery
 layout item_home
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1596,7 +1600,11 @@ string role_teacher
 string search_menu_title
 string status_bar_notification_info_overflow
 string string_course
+string string_isselected
+string string_issign
 string string_local
+string string_notselected
+string string_notsign
 string string_teacher
 string string_time
 string welcome
