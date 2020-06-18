@@ -49,7 +49,7 @@
           <entry type="LOCAL">
             <value>
               <list>
-                <branch-info repo="$USER_HOME$/Documents/GitHub/CourseManager" source="ZB" />
+                <branch-info repo="$PROJECT_DIR$/.." source="ZB" />
               </list>
             </value>
           </entry>
@@ -63,10 +63,10 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$USER_HOME$/Documents/GitHub/CourseManager" value="LY" />
+        <entry key="$PROJECT_DIR$/.." value="LY" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Documents/GitHub/CourseManager" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1dO19oVIuARswPxWZaJemjGxcO0" />
@@ -74,7 +74,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
