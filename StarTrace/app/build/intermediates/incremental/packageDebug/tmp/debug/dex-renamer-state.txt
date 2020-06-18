@@ -1,0 +1,4 @@
+#Thu Jun 18 22:02:34 CST 2020
+base.0=/Users/zhangbo/Desktop/StarTrace/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
