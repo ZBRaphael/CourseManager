@@ -96,22 +96,22 @@
         <el-table-column label="操作" align="center" width="180" class-name="small-padding fixed-width">
           <template slot-scope="{row}">
             <el-tooltip content="记得要仔细查看上课时间和地点喔～" placement="top" effect="light" :hide-after="1000" :enterable="false">
-              <el-button v-if="row.state==='未选课'" size="mini" type="primary" @click="modifyStatus(row,'待签到')">
+              <el-button v-if="row.state==='未选课'" size="mini" type="primary" @click="modifystate(row,'待签到')">
                 选课
               </el-button>
             </el-tooltip>
             <el-tooltip content="课程开始前记得来签到呀～" placement="top" effect="light" :hide-after="1000" :enterable="false">
-              <el-button v-if="row.state==='待签到'" size="mini" type="warning" @click="modifyStatus(row,'已签到')">
+              <el-button v-if="row.state==='待签到'" size="mini" type="warning" @click="modifystate(row,'已签到')">
                 签到
               </el-button>
             </el-tooltip>
             <el-tooltip content="确定不上这节课了吗o(╥﹏╥)o" placement="top" effect="light" :hide-after="1000" :enterable="false">
-              <el-button v-if="(row.state==='待签到')" size="mini" type="danger" @click="modifyStatus(row,'未选课')">
+              <el-button v-if="(row.state==='待签到')" size="mini" type="danger" @click="modifystate(row,'未选课')">
                 取消选课
               </el-button>
             </el-tooltip>
             <el-tooltip content="这节课已经完成签到啦(*￣︶￣)" placement="top" effect="light" :hide-after="1000" :enterable="false">
-              <el-button v-if="row.state==='已签到'" size="mini" type="success" @click="modifyStatus(row,'已签到')">
+              <el-button v-if="row.state==='已签到'" size="mini" type="success" @click="modifystate(row,'已签到')">
                 已签到
               </el-button>
             </el-tooltip>
@@ -342,14 +342,14 @@
           this.axios
             .post("http://localhost:8004/Students/Edit", qs.stringify(updateStuData))
             .then(result => {
-              if (result.data=='success') {
+              if (result.data == 'success') {
                 this.$notify({
                   id: "",
                   title: "修改成功",
                   message: "修改成功！快去看看～",
                   type: "success"
                 });
-                this.global.role=this.updateStuInfo.stuUsername;
+                this.global.role = this.updateStuInfo.stuUsername;
                 console.log(this.global.role);
                 this.getStuInfo();
               }
@@ -393,7 +393,7 @@
       },
 
       //选课 签到 后端需要修改学生状态
-      modifyStatus(row, state) {
+      modifystate(row, state) {
         if (row.state == '已签到' && state == '已签到') {
           this.$message({
             message: '这节课已经签到完成啦！',
@@ -458,7 +458,7 @@
         this.dialogStuClassFormVisible = true;
         //todo 向后端获取该学生的上课记录
         // this.axios.get("http://localhost:8004/Courses").then(result => {
-        //   if (result.status == 'success) {
+        //   if (result.data == 'success') {
         //     this.stuCourseData = result.data
         //   }
         // });
@@ -484,7 +484,7 @@
       getStuInfo() {
         //todo 获取学生个人信息
         // this.axios.get("http://localhost:8004/Courses").then(result => {
-        //   if (result.status == 'success') {
+        //   if (result.data == 'success') {
         //     this.stuInfo=result.data;
         //   }
         // });
@@ -503,41 +503,43 @@
       },
 
       //获取全部已发布的课程信息
-      getAllcourses(){
-    //todo 获取全部已发布的课程信息
-    // this.axios.get("http://localhost:8004/Courses").then(result => {
-    //   if (result.status == 200) {
-    //     this.coursesData = [],
-    //       result.forEach(item => {
-    //         var course = {
-    //           courseId: item.courseId,
-    //           interest: item.interest,
-    //           courseCostHour: item.interest,
-    //           courseDate: item.interest,
-    //           courseLocation: item.interest,
-    //           status: item.interest,
-    //           state: item.isCanceledByStu === '1' ? '未选课' : item.isAttend === '1' ? '已签到' : '待签到',
-    //           isAttend: item.isAttend,
-    //           isCanceledByStu: item.isCanceledByStu,
-    //           Enrollments: item.Enrollments
-    //         };
-    //         this.coursesData.push(course);
-    //       });
-    //
-    //     this.loading = false;
-    //   }
-    // });
+      getAllcourses() {
+        //todo 获取全部已发布的课程信息
+        // this.axios.get("http://localhost:8004/Courses").then(result => {
+        //   if (result.data == 200) {
+        //     this.coursesData = [],
+        //       result.forEach(item => {
+        // this.coursesData = [],
+        //   result.data.forEach(item => {
+        //     var course = {
+        //       attendClassId: item.attendClassId,
+        //       courseId: item.courseId,
+        //       interest: item.interest,
+        //       courseCostHour: item.courseCostHour,
+        //       courseDate: item.courseDate,
+        //       courseLocation: item.courseLocation,
+        //       state: item.isCanceledByStu === '1' ? '未选课' : item.isAttend === '1' ? '已签到' : '待签到',
+        //       isAttend: item.isAttend,
+        //       isCanceledByStu: item.isCanceledByStu,
+        //       Enrollments: item.Enrollments
+        // courseDescription: item.courseDescription,
+        //
+        //     };
+        //     this.coursesData.push(course);
+        //   });
+        //     this.loading = false;
+        //   }
+        // });
 
         var result =
           [
             {
-              attendClassId:'-1',
+              attendClassId: '-1',
               courseId: '15767',
               interest: '篮球课',
               courseCostHour: '1',
               courseDate: '2020-06-13 15:00-17:00',
               courseLocation: '理工体育馆',
-              status: '0',
               state: '未选课',
               isAttend: '0',
               isCanceledByStu: '0',
@@ -550,13 +552,12 @@
               courseDescription: '篮球基本技巧讲解及实践课'
             },
             {
-              attendClassId:'1',
+              attendClassId: '1',
               courseId: '123',
               interest: '足球课',
               courseCostHour: '1',
               courseDate: '2020-06-12 19:00-21:00',
               courseLocation: '人大体育馆',
-              status: '2',
               state: '已签到',
               // StuNum: '12',
               isAttend: '1',
@@ -576,13 +577,12 @@
 
             },
             {
-              attendClassId:'3',
+              attendClassId: '3',
               courseId: '22',
               interest: '体能班',
               courseCostHour: '1',
               courseDate: '2020-06-15 16:00-18:00',
               courseLocation: '北理操场',
-              status: '1',
               state: '待签到',
               // StuNum: '7',
               isCanceledByStu: '1',
@@ -614,7 +614,7 @@
               courseCostHour: item.courseCostHour,
               courseDate: item.courseDate,
               courseLocation: item.courseLocation,
-              status: item.interest,
+              courseDescription: item.courseDescription,
               state: item.isCanceledByStu === '1' ? '未选课' : item.isAttend === '1' ? '已签到' : '待签到',
               isAttend: item.isAttend,
               isCanceledByStu: item.isCanceledByStu,
