@@ -14,13 +14,9 @@ import com.example.startrace.R
 import com.example.startrace.base.BaseFragment
 import com.example.startrace.model.SlideshowViewModel
 
-class SlideshowFragment : BaseFragment() {
+class UserFragment : BaseFragment() {
 
     override fun initView(): View? {
-        val tv = TextView(context)
-        tv.gravity = Gravity.CENTER
-        tv.setTextColor(Color.RED)
-        tv.text = javaClass.simpleName
-        return tv
+        return View.inflate(context, R.layout.fragment_user, null)
     }
 }

@@ -44,6 +44,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array planets_array
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -644,6 +645,7 @@ color background_material_light
 color bb_darkBackgroundColor
 color bb_inActiveBottomBarItemColor
 color bb_tabletRightBorderDark
+color bg_splash
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -680,6 +682,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color half_transparent
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -730,6 +733,14 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color qq_blue
+color qq_blue_disabled
+color qq_blue_pressed
+color qq_gray
+color qq_gray_dark
+color qq_red
+color qq_red_dark
+color qq_section_text_color
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1063,6 +1074,9 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_login
+drawable btn_login_normal
+drawable btn_login_pressed
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -1102,6 +1116,12 @@ drawable notify_panel_notification_icon_bg
 drawable splash_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user_center_default_avatar
+drawable user_center_login
+drawable user_center_mobile
+drawable user_center_notice
+drawable user_center_orther
+drawable user_center_setting
 id ALT
 id CTRL
 id FUNCTION
@@ -1181,6 +1201,7 @@ id bg
 id blocking
 id bottom
 id bottomBar
+id btn_register
 id buttonPanel
 id center
 id center_horizontal
@@ -1192,6 +1213,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id confirmPassword
 id container
 id content
 id contentPanel
@@ -1245,6 +1267,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_address_manager
 id labeled
 id largeLabel
 id left
@@ -1252,8 +1275,10 @@ id line1
 id line3
 id listMode
 id list_item
+id ll_userinfo
 id loading
 id login
+id login_register
 id masked
 id message
 id middle
@@ -1278,7 +1303,9 @@ id parentPanel
 id parent_matrix
 id password
 id percent
+id phone
 id pin
+id planets_spinner
 id progress_circular
 id progress_horizontal
 id radio
@@ -1308,9 +1335,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id select_card_date
-id select_card_loacl
-id select_card_teacher
 id select_dialog_listview
 id selected
 id shifting
@@ -1355,7 +1379,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id text_input_password_toggle
-id text_slideshow
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -1378,6 +1401,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userName
 id username
 id view_offset_helper
 id visible
@@ -1443,6 +1467,7 @@ layout abc_tooltip
 layout activity_about
 layout activity_login
 layout activity_main
+layout activity_register
 layout activity_setting
 layout activity_splash
 layout app_bar_main
@@ -1470,7 +1495,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_gallery
 layout fragment_home
-layout fragment_slideshow
+layout fragment_user
 layout item_gallery
 layout item_home
 layout mtrl_layout_snackbar
@@ -1496,6 +1521,7 @@ mipmap audio_anim_06
 mipmap audio_anim_07
 mipmap audio_anim_08
 mipmap audio_anim_09
+mipmap avatar_9
 mipmap base_left_button_normal
 mipmap base_left_button_pressed
 mipmap comment_bg
@@ -1520,6 +1546,7 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap item_transtop
+mipmap login_bk
 mipmap music_default_bg
 mipmap music_titlebar_bg
 mipmap player_comment
@@ -1595,6 +1622,8 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string prompt_email
 string prompt_password
+string register
+string role
 string role_student
 string role_teacher
 string search_menu_title

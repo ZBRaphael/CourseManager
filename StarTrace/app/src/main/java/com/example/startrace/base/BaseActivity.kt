@@ -41,7 +41,7 @@ abstract class BaseActivity: AppCompatActivity(),AnkoLogger {
      * 开启一个Activity并且完成该页面
      */
     inline fun <reified T: BaseActivity> startActivityAndFinish(){
-        startActivity<LoginActivity>()
+        startActivity<T>()
         finish()
     }
 }

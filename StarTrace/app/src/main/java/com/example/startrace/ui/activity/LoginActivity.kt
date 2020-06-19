@@ -20,6 +20,7 @@ import com.example.startrace.base.BaseActivity
 import com.example.startrace.ui.login.LoggedInUserView
 import com.example.startrace.ui.login.LoginViewModel
 import com.example.startrace.ui.login.LoginViewModelFactory
+import org.jetbrains.anko.startActivity
 
 class LoginActivity : BaseActivity() {
 
@@ -33,8 +34,13 @@ class LoginActivity : BaseActivity() {
         val username = findViewById<EditText>(R.id.username)
         val password = findViewById<EditText>(R.id.password)
         val login = findViewById<Button>(R.id.login)
+        val register = findViewById<Button>(R.id.btn_register)
         val loading = findViewById<ProgressBar>(R.id.loading)
-
+        register.setOnClickListener{
+            val intent = Intent(this,
+                RegisterActivity::class.java)
+            startActivity(intent)
+        }
         loginViewModel = ViewModelProviders.of(this,
             LoginViewModelFactory()
         )
@@ -100,6 +106,7 @@ class LoginActivity : BaseActivity() {
                 loading.visibility = View.VISIBLE
                 loginViewModel.login(username.text.toString(), password.text.toString())
             }
+
         }
     }
 
@@ -110,14 +117,13 @@ class LoginActivity : BaseActivity() {
     private fun updateUiWithUser(model: LoggedInUserView) {
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
-        // TODO : initiate successful logged in experience
         Toast.makeText(
                 applicationContext,
                 "$welcome $displayName",
                 Toast.LENGTH_LONG
         ).show()
         val intent = Intent(this,
-            MainActivity::class.java)
+            RegisterActivity::class.java)
         startActivity(intent)
     }
 
