@@ -39,19 +39,19 @@
           <el-timeline-item placement="top">
             <el-card>
               <h4>添加教练员</h4>
-              <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="80px" class="adminForm">
+              <el-form :model="teaInfo" :rules="rules" ref="teaInfo" label-width="80px" class="adminForm">
                 <el-form-item label="用户名" prop="teaUsername" required>
-                  <el-input v-model="ruleForm.teaUsername" placeholder="请输入姓名"></el-input>
+                  <el-input v-model="teaInfo.teaUsername" placeholder="请输入姓名"></el-input>
                 </el-form-item>
                 <el-form-item label="密码" prop="teaPassword" required>
-                  <el-input v-model="ruleForm.teaPassword" placeholder="请输入密码"></el-input>
+                  <el-input v-model="teaInfo.teaPassword" placeholder="请输入密码"></el-input>
                 </el-form-item>
                 <el-form-item label="联系方式" prop="teaTell" required>
-                  <el-input v-model="ruleForm.teaTell" placeholder="请输入手机号码"></el-input>
+                  <el-input v-model="teaInfo.teaTell" placeholder="请输入手机号码"></el-input>
                 </el-form-item>
                 <el-form-item>
-                  <el-button type="primary" @click="addTea('ruleForm')">立即添加</el-button>
-                  <el-button @click="resetForm('ruleForm')">重置</el-button>
+                  <el-button type="primary" @click="addTea('teaInfo')">立即添加</el-button>
+                  <el-button @click="resetForm('teaInfo')">重置</el-button>
                 </el-form-item>
               </el-form>
             </el-card>
@@ -96,15 +96,15 @@
 
       <!-- 添加课时对话框-->
       <el-dialog title="添加课时" :visible.sync="dialogFormVisible" class="dialogOne">
-        <el-form :model="updateForm" class="content">
-          <el-form-item label="学生姓名" :label-width="formLabelWidth">
-            <el-input v-model="updateForm.stuUsername" autocomplete="off" readonly></el-input>
+        <el-form :model="addClassHourForm" ref="addClassHourForm" class="content">
+          <el-form-item label="学生姓名" prop="stuUsername" :label-width="formLabelWidth">
+            <el-input v-model="addClassHourForm.stuUsername" autocomplete="off" readonly></el-input>
           </el-form-item>
-          <el-form-item label="剩余课时数" :label-width="formLabelWidth" readonly>
-            <el-input v-model="updateForm.restClassHour" autocomplete="off"></el-input>
+          <el-form-item label="剩余课时数" prop="restClassHour" :label-width="formLabelWidth" readonly>
+            <el-input v-model="addClassHourForm.restClassHour" autocomplete="off"></el-input>
           </el-form-item>
-          <el-form-item label="待添加课时" placeholder="请输入要添加的课时数" :label-width="formLabelWidth">
-            <el-input v-model="updateForm.addClassHour" autocomplete="off"></el-input>
+          <el-form-item label="待添加课时" prop="addClassHour" :label-width="formLabelWidth">
+            <el-input v-model="addClassHourForm.addClassHour" placeholder="请输入要添加的课时数" autocomplete="off"></el-input>
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
@@ -116,7 +116,7 @@
 
     <!-- 查看课程信息对话框-->
     <el-dialog title="课程信息" :visible.sync="dialogCourseVisible" class="dialogOne">
-      <el-form :model="courseForm" class="content" :rules="rules" ref="updateForm">
+      <el-form :model="courseForm" class="content" :rules="rules" ref="addClassHourForm">
         <el-form-item label="课程编号" prop="courseId" :label-width="formLabelWidth" required>
           <el-input v-model="courseForm.courseId" autocomplete="off" readonly></el-input>
         </el-form-item>
@@ -209,14 +209,14 @@
         },
 
         // 教练员用户 表单项设置
-        ruleForm: {
+        teaInfo: {
           teaUsername: "",
           teaPassword: "",
           teaTell: ""
         },
 
         // 添加课时 表单项
-        updateForm: {
+        addClassHourForm: {
           teaUsername: "",
           restClassHour: "",
           addClassHour: ""
@@ -297,7 +297,6 @@
         //todo 向后端请求用户名为searchName的学生的已上总课时和剩余课时
         // this.axios.get("http://localhost:8004/Courses/Edit?id=" + item.CourseId).then(result => {
         //   if (result.status == 200) {
-        //     console.log(result.data);
         //     this.checkForm.totalHour = result.data.stuTotalClassHour;
         //     this.checkForm.restHour = result.data.stuTotalClassHour;
         //   }
@@ -314,14 +313,15 @@
       addHour() {
         //回显
         this.dialogFormVisible = true;
-        this.updateForm.stuUsername = this.searchName;
-        this.updateForm.restClassHour = this.checkForm.restHour;
+        this.addClassHourForm.stuUsername = this.searchName;
+        this.addClassHourForm.restClassHour = this.checkForm.restHour;
       },
       updateStudent() {
-        this.dialogFormVisible = false;
+        //关闭对话框
+        //this.dialogFormVisible = false;
         var updateData = {
-          stuUsername: this.updateForm.stuUsername,
-          addHourNumber: this.updateForm.addClassHour
+          stuUsername: this.addClassHourForm.stuUsername,
+          addHourNumber: this.addClassHourForm.addClassHour
         };
         // 改变post的编码格式，适应后台做修改！
         //todo 传学生姓名和要添加的课时数即updateData给后端
@@ -335,7 +335,10 @@
                 message: "添加成功！请注意查看。",
                 type: "success"
               });
-              this.getStudentData();
+              this.searchRecord();
+              this.addClassHourForm.restClassHour = this.checkForm.restHour;
+              this.resetForm('addClassHourForm');
+
             }
           })
           .catch(err => {
@@ -348,14 +351,14 @@
 
       // 添加教练员用户
       addTea(formName) {
-        console.log(formName);
+        // console.log(formName);
         this.$refs[formName].validate(valid => {
           if (valid) {
             // 表单验证成功
             var strData = {
-              teaUsername: this.ruleForm.teaUsername,
-              teaPassword: this.ruleForm.teaPassword,
-              teaTell: this.ruleForm.teaTell,
+              teaUsername: this.teaInfo.teaUsername,
+              teaPassword: this.teaInfo.teaPassword,
+              teaTell: this.teaInfo.teaTell,
             };
             console.log(strData);
             // 改变post的编码格式，适应后台
@@ -371,7 +374,7 @@
                     type: "success"
                   });
                   this.getStudentData();
-                  this.resetForm("ruleForm");
+                  this.resetForm("teaInfo");
                 }
               })
               .catch(err => {
@@ -447,7 +450,6 @@
       // 删除教练员
       deleteTea(index, row) {
         //todo 传 教练员编号 给后端
-        console.log(row);
         this.$confirm("此操作将从系统中删除该教练员, 是否继续?", "提示", {
           cancelButtonText: "取消",
           confirmButtonText: "确定",

@@ -16,19 +16,19 @@
           <el-timeline-item placement="top">
             <el-card>
               <h4>添加课程</h4>
-              <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="80px" class="coursesForm">
+              <el-form :model="addCourseForm" :rules="rules" ref="addCourseForm" label-width="80px" class="coursesForm">
                 <el-form-item label="课程类型" prop="interest" required>
-                  <el-select v-model="ruleForm.interest" filterable placeholder="请选择课程类型">
+                  <el-select v-model="addCourseForm.interest" filterable placeholder="请选择课程类型">
                     <el-option v-for="item in interest" :key="item.value" :label="item.interest" :value="item.value"></el-option>
                   </el-select>
                 </el-form-item>
                 <el-form-item label="课 时 数" prop="courseCostHour" required>
-                  <el-input v-model="ruleForm.courseCostHour" placeholder="请输入本节课需花费的课时数"></el-input>
+                  <el-input v-model="addCourseForm.courseCostHour" placeholder="请输入本节课需花费的课时数"></el-input>
                 </el-form-item>
                 <el-form-item label="上课日期" required>
                   <el-col :span="11">
                     <el-form-item prop="date">
-                      <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date" style="width: 100%;">
+                      <el-date-picker type="date" placeholder="选择日期" v-model="addCourseForm.date" style="width: 100%;">
                       </el-date-picker>
                     </el-form-item>
                   </el-col>
@@ -36,23 +36,23 @@
                 <el-form-item label="上课时段" required>
                   <el-col :span="11">
                     <el-form-item prop="time1">
-                      <el-time-picker placeholder="选择上课时间" v-model="ruleForm.time1" style="width: 100%;" format="HH:mm" value-format="HH:mm"></el-time-picker>
+                      <el-time-picker placeholder="选择上课时间" v-model="addCourseForm.time1" style="width: 100%;" format="HH:mm" value-format="HH:mm"></el-time-picker>
                     </el-form-item>
                   </el-col>
                   <el-col class="line" :span="1">-</el-col>
                   <el-col :span="11">
                     <el-form-item prop="time2">
-                      <el-time-picker placeholder="选择下课时间" v-model="ruleForm.time2" style="width: 100%;" format="HH:mm" value-format="HH:mm"></el-time-picker>
+                      <el-time-picker placeholder="选择下课时间" v-model="addCourseForm.time2" style="width: 100%;" format="HH:mm" value-format="HH:mm"></el-time-picker>
                     </el-form-item>
                   </el-col>
                 </el-form-item>
                 <el-form-item label="上课地点" prop="courseLocation">
-                  <el-input v-model="ruleForm.courseLocation" placeholder="请输入上课地点"></el-input>
+                  <el-input v-model="addCourseForm.courseLocation" placeholder="请输入上课地点"></el-input>
                 </el-form-item>
                 <el-form-item label="课程简介" prop="courseDescription">
                   <el-input
                     type="textarea"
-                    v-model="ruleForm.courseDescription"
+                    v-model="addCourseForm.courseDescription"
                     placeholder="请填写课程信息"
                     maxlength="50"
                     :autosize="{ minRows: 4, maxRows: 6}"
@@ -60,8 +60,8 @@
                   ></el-input>
                 </el-form-item>
                 <el-form-item>
-                  <el-button type="primary" @click="submitForm('ruleForm')">立即添加</el-button>
-                  <el-button @click="resetForm('ruleForm')">重置</el-button>
+                  <el-button type="primary" @click="submitForm('addCourseForm')">立即添加</el-button>
+                  <el-button @click="resetForm('addCourseForm')">重置</el-button>
                 </el-form-item>
               </el-form>
             </el-card>
@@ -242,7 +242,7 @@
 
 
         // 添加课程 表单项设置
-        ruleForm: {
+        addCourseForm: {
           interest: "",
           courseCostHour: "",
           date: "",
@@ -331,36 +331,38 @@
         this.$refs[formName].validate(valid => {
           if (valid) {
             // 表单验证成功
-            var strData = {
-              interest: this.ruleForm.interest,
-              courseCostHour: this.ruleForm.courseCostHour,
+            var course = {
+              interest: this.addCourseForm.interest,
+              courseCostHour: this.addCourseForm.courseCostHour,
               courseStartDate: this.sendAddTime(
-                this.ruleForm.date,
-                this.ruleForm.time1
+                this.addCourseForm.date,
+                this.addCourseForm.time1
               ),
               courseEndDate: this.sendAddTime(
-                this.ruleForm.date,
-                this.ruleForm.time2
+                this.addCourseForm.date,
+                this.addCourseForm.time2
               ),
-              courseLocation: this.ruleForm.courseLocation,
-              courseDescription: this.ruleForm.courseDescription
+              courseLocation: this.addCourseForm.courseLocation,
+              courseDescription: this.addCourseForm.courseDescription
             };
             // 改变post的编码格式，适应后台
-            //todo 提交课程信息strData到后端
+            //todo 提交课程信息course到后端
             this.axios
-              .post("http://localhost:8004/Courses/create", qs.stringify(strData))
+              .post("http://localhost:8004/Courses/create", qs.stringify(course))
               .then(result => {
-                if (result.status == 200 || result.status == 302) {
+                if (result.data=='sucess') {
+                  this.resetForm('addCourseForm');
                   this.$message({
-                    message: "添加成功(*￣︶￣)，",
+                    message: "添加成功，快去看看吧(*￣︶￣)",
                     type: "success"
                   });
                   this.getAllcourses();
                 }
               })
               .catch(err => {
+                this.resetForm('addCourseForm');
                 this.$message({
-                  message: "添加失败o(╥﹏╥)o",
+                  message: "添加失败o(╥﹏╥)o,"+err+'。',
                   type: "danger"
                 });
               });
@@ -379,11 +381,11 @@
           type: "warning"
         })
           .then(() => {
-            //TODO 后端要把该课程的isCanceledBTea修改为1
+            //TODO 老师取消课程后端要把该课程的isCanceledByTea修改为1
             this.axios
               .get("http://localhost:8004/Courses/Delete?id=" + row.courseId)
               .then(result => {
-                if (result.status == 200 || result.status == 302) {
+                if (result.data=='success') {
                   this.$message({
                     message: "删除成功(*￣︶￣)，",
                     type: "success"
@@ -419,7 +421,7 @@
             this.axios
               .get("http://localhost:8004/Courses/Delete?courseid=" + row.courseId + "&stuUsername=" + row.stuUsername)
               .then(result => {
-                if (result.status == 200 || result.status == 302) {
+                if (result.data=='sucess') {
                   this.$message({
                     message: "删除成功(*￣︶￣)，",
                     type: "success"
@@ -481,7 +483,7 @@
         // this.$http.get("http://localhost:8004/Students").then(result => {
         //   if (result.status == 200) {
         //     this.teaCourseData = [];
-        //     result.forEach(item => {
+        //     result.data.forEach(item => {
         //       var teaCourse = {
         //         courseId: item.courseId,
         //         interest: item.interest,
@@ -537,7 +539,7 @@
             this.axios
               .post("http://localhost:8004/Students/Edit", qs.stringify(updateData))
               .then(result => {
-                if (result.status == 200 || result.status == 302) {
+                if (result.data=='sucess') {
                   this.$notify({
                     id: "",
                     title: "修改成功",

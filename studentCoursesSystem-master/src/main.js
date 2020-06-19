@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import router from './router'
 import '../static/css/style.css'
+
 Vue.use(ElementUI)
 Vue.use(Vueaxios,axios)
 
@@ -17,6 +18,11 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  data: function(){
+    return {
+      ORDERID: 'PLDxxxxxx0001',
+    }
+  },
   components: { App },
   render:h =>h(App)
 })

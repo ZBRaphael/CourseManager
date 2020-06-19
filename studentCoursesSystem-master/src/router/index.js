@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      // name: 'HelloWorld',
-      redirect:"/students"
+      name: 'HelloWorld',
+      redirect:"/Enrollments"
     },
     {
       path:"/students",

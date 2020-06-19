@@ -19,16 +19,16 @@
             <el-card>
               <h4>个人信息</h4>
               <el-form :model="stuInfo" ref="ruleForm" label-width="80px" class="studentForm">
-                <el-form-item label="用户名" prop="Title" :label-width="formLabelWidth">
+                <el-form-item label="用户名" prop="stuUsername" :label-width="formLabelWidth">
                   <el-input v-model="stuInfo.stuUsername" readonly></el-input>
                 </el-form-item>
-                <el-form-item label="联系方式" prop="Cost" :label-width="formLabelWidth">
+                <el-form-item label="联系方式" prop="stuTell" :label-width="formLabelWidth">
                   <el-input v-model="stuInfo.stuTell" readonly></el-input>
                 </el-form-item>
-                <el-form-item label="已上总课时" prop="Cost" :label-width="formLabelWidth">
+                <el-form-item label="已上总课时" prop="stuTotalHour" :label-width="formLabelWidth">
                   <el-input v-model="stuInfo.stuTotalHour" readonly></el-input>
                 </el-form-item>
-                <el-form-item label="剩余课时" prop="Cost" :label-width="formLabelWidth">
+                <el-form-item label="剩余课时" prop="stuRestHour" :label-width="formLabelWidth">
                   <el-input v-model="stuInfo.stuRestHour" readonly></el-input>
                 </el-form-item>
                 <el-form-item :label-width="formLabelWidth">
@@ -203,7 +203,7 @@
     <el-dialog title="上课记录表" :visible.sync="dialogStuClassFormVisible" class="dialogOne">
       <el-table :data="stuCourseData">
         <el-table-column type="index" :index="indexMethod"></el-table-column>
-        <el-table-column property="stuId" label="课程编号" width="100"></el-table-column>
+        <el-table-column property="courseId" label="课程编号" width="100"></el-table-column>
         <el-table-column property="interest" label="课程名" width="100"></el-table-column>
         <el-table-column property="courseDate" label="上课时间" sortable width="200"></el-table-column>
         <el-table-column property="courseLocation" label="上课地点" width="150"></el-table-column>
@@ -261,7 +261,7 @@
           confirmPassword: '',
         },
 
-        //课程信息总表
+        //最近发布的课程信息 总表
         coursesData: [],
         courseInfoVisible: false,
         formLabelWidth: "7em",
@@ -342,13 +342,15 @@
           this.axios
             .post("http://localhost:8004/Students/Edit", qs.stringify(updateStuData))
             .then(result => {
-              if (result.status == 200 || result.status == 302) {
+              if (result.data=='success') {
                 this.$notify({
                   id: "",
                   title: "修改成功",
                   message: "修改成功！快去看看～",
                   type: "success"
                 });
+                this.global.role=this.updateStuInfo.stuUsername;
+                console.log(this.global.role);
                 this.getStuInfo();
               }
             })
@@ -384,7 +386,7 @@
         this.stuChooseData = []
         row.Enrollments.forEach(item => {
           var newStu = {
-            stuName: item.stuName,
+            stuUsername: item.stuUsername,
           };
           this.stuChooseData.push(newStu);
         });
@@ -398,12 +400,12 @@
             type: 'success'
           })
         } else if (state == '待签到') {
-          //todo
-          // 后端将学生选课表row.courseId对应的isCanceledByStu改为0，isAttend改为0
+          //todo 传上课记录编号attendClassId给后端 -1代表学生从未选过这个课
+          // 后端将学生选课记录表attendClassId对应的isCanceledByStu改为0，isAttend改为0
           // this.axios
           //   .post("http://localhost:8004/Students/Edit")
           //   .then(result => {
-          //     if (result.status == 200 || result.status == 302) {
+          //     if (result.data=='success') {
           //     row.state = state;
           //       this.$notify({
           //         message: "选课成功啦！快来看看～",
@@ -423,11 +425,11 @@
           })
         } else if (state == '已签到') {
           //todo
-          // 后端将学生选课表row.courseId对应的isCanceledByStu改为0，isAttend改为1
+          // 后端将学生选课表attendClassId对应的isCanceledByStu改为0，isAttend改为1
           // this.axios
           //   .post("http://localhost:8004/Students/Edit")
           //   .then(result => {
-          //     if (result.status == 200 || result.status == 302) {
+          //     if (result.data=='success') {
           //     row.state = state;
           //       this.$notify({
           //         message: "签到成功～今天上课也要加油喔ヾ(◍°∇°◍)ﾉﾞ",
@@ -456,24 +458,24 @@
         this.dialogStuClassFormVisible = true;
         //todo 向后端获取该学生的上课记录
         // this.axios.get("http://localhost:8004/Courses").then(result => {
-        //   if (result.status == 200) {
+        //   if (result.status == 'success) {
         //     this.stuCourseData = result.data
         //   }
         // });
         this.stuCourseData = [
           {
-            Id: '1',
-            Title: '篮球课',
-            Date: '2020-06-13 15:00-17:00',
-            Place: '理工体育馆',
-            Tea: '金教练'
+            courseId: '1',
+            interest: '篮球课',
+            courseDate: '2020-06-13 15:00-17:00',
+            courseLocation: '理工体育馆',
+            // teaUsername: '金教练'
           },
           {
-            Id: '12',
-            Title: '足球课',
-            Date: '2020-06-12 19:00-21:00',
-            Place: '人大体育馆',
-            Tea: '林教练'
+            courseId: '12',
+            interest: '足球课',
+            courseDate: '2020-06-12 19:00-21:00',
+            courseLocation: '人大体育馆',
+            // teaUsername: '林教练'
           }
         ]
       },
@@ -482,9 +484,8 @@
       getStuInfo() {
         //todo 获取学生个人信息
         // this.axios.get("http://localhost:8004/Courses").then(result => {
-        //   if (result.status == 200) {
+        //   if (result.status == 'success') {
         //     this.stuInfo=result.data;
-        //
         //   }
         // });
         var result = {
@@ -494,6 +495,11 @@
           stuRestHour: '12'
         };
         this.stuInfo = result;
+        console.log(this.$root.ORDERID);
+
+        this.$root.ORDERID = "xxxxx";
+        console.log(this.$root.ORDERID);
+
       },
 
       //获取全部已发布的课程信息
@@ -525,6 +531,7 @@
         var result =
           [
             {
+              attendClassId:'-1',
               courseId: '15767',
               interest: '篮球课',
               courseCostHour: '1',
@@ -543,6 +550,7 @@
               courseDescription: '篮球基本技巧讲解及实践课'
             },
             {
+              attendClassId:'1',
               courseId: '123',
               interest: '足球课',
               courseCostHour: '1',
@@ -568,6 +576,7 @@
 
             },
             {
+              attendClassId:'3',
               courseId: '22',
               interest: '体能班',
               courseCostHour: '1',
@@ -576,7 +585,6 @@
               status: '1',
               state: '待签到',
               // StuNum: '7',
-              isAttend: '0',
               isCanceledByStu: '1',
               Enrollments: [{
                 stuId: '12',
@@ -600,20 +608,21 @@
         this.coursesData = [],
           result.forEach(item => {
             var course = {
+              attendClassId: item.attendClassId,
               courseId: item.courseId,
               interest: item.interest,
-              courseCostHour: item.interest,
-              courseDate: item.interest,
-              courseLocation: item.interest,
+              courseCostHour: item.courseCostHour,
+              courseDate: item.courseDate,
+              courseLocation: item.courseLocation,
               status: item.interest,
               state: item.isCanceledByStu === '1' ? '未选课' : item.isAttend === '1' ? '已签到' : '待签到',
               isAttend: item.isAttend,
               isCanceledByStu: item.isCanceledByStu,
               Enrollments: item.Enrollments
+
             };
             this.coursesData.push(course);
           });
-
         this.loading = false;
       },
 
