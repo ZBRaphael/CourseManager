@@ -4,11 +4,11 @@
         <tab
             id="@+id/tab_home"
             icon="@drawable/ic_menu_camera"
-            title="已选课程" />
+            title="待上课程" />
         <tab
             id="@+id/tab_gallery"
             icon="@drawable/ic_menu_gallery"
-            title="选课" />
+            title="已发布课程" />
         <tab
             id="@+id/tab_slideshow"
             icon="@drawable/ic_menu_slideshow"
