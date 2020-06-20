@@ -1315,6 +1315,7 @@ id radio
 id radioButton
 id radioButton2
 id recyclerview
+id refreshLayout
 id result
 id right
 id right_icon

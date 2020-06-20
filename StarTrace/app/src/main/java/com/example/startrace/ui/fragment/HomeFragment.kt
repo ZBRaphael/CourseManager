@@ -32,6 +32,13 @@ class HomeFragment : BaseFragment() {
         //适配
         val adapter = HomeAdapter()
         recyclerview.adapter = adapter
+        //初始化刷新控件
+        refreshLayout.setColorSchemeColors(Color.RED,Color.YELLOW,Color.GREEN)
+        //刷新监听
+        refreshLayout.setOnRefreshListener {
+            //刷新监听
+            loadDatas()
+        }
 
     }
 
@@ -50,6 +57,8 @@ class HomeFragment : BaseFragment() {
              * 子线程调用
              */
             override fun onFailure(call: Call, e: IOException) {
+                //隐藏刷新控件
+                refreshLayout.isRefreshing = false
                 Log.v("http","获取数据出错："+path)
             }
 
@@ -58,7 +67,9 @@ class HomeFragment : BaseFragment() {
              */
 
             override fun onResponse(call: Call, response: Response) {
-                Log.v("http","获取数据出错："+Thread.currentThread().name)
+                //隐藏刷新控件
+                refreshLayout.isRefreshing = false
+                Log.v("http","获取数据成功："+Thread.currentThread().name)
             }
 
         })
