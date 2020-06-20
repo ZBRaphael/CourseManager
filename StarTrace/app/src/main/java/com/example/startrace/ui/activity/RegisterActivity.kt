@@ -20,7 +20,7 @@ class RegisterActivity:BaseActivity() {
         super.onCreate(savedInstanceState)
         val register = findViewById<Button>(R.id.login_register)
         register.setOnClickListener{
-            startActivity<MainActivity>()
+            startActivityAndFinish<LoginActivity>()
         }
     }
 

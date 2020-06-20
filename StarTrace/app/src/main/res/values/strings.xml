@@ -34,13 +34,8 @@
     <string name="register">Register</string>
     <string name="role">身份：</string>
     <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>篮球</item>
+        <item>足球</item>
+        <item>乒乓球</item>
     </string-array>
 </resources>

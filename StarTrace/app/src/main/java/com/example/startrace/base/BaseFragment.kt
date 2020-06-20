@@ -9,6 +9,7 @@ import com.example.startrace.util.URLProviderUtils
 import okhttp3.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.runOnUiThread
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import java.io.IOException
 
@@ -26,7 +27,7 @@ abstract class BaseFragment:Fragment() ,AnkoLogger {
     /**
      * fragment 初始化
      */
-    protected fun init() {
+    open protected fun init() {
 
     }
 
@@ -61,6 +62,5 @@ abstract class BaseFragment:Fragment() ,AnkoLogger {
     fun myToast(msg:String){
         context?.runOnUiThread { toast(msg) }
     }
-
 
 }

@@ -4,14 +4,14 @@
         <tab
             id="@+id/tab_home"
             icon="@drawable/ic_menu_camera"
-            title="Favorites" />
+            title="已选课程" />
         <tab
             id="@+id/tab_gallery"
             icon="@drawable/ic_menu_gallery"
-            title="Nearby" />
+            title="选课" />
         <tab
             id="@+id/tab_slideshow"
             icon="@drawable/ic_menu_slideshow"
-            title="Friends" />
+            title="我的" />
     </tabs>
 </PreferenceScreen>

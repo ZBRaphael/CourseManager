@@ -123,7 +123,7 @@ class LoginActivity : BaseActivity() {
                 Toast.LENGTH_LONG
         ).show()
         val intent = Intent(this,
-            RegisterActivity::class.java)
+            MainActivity::class.java)
         startActivity(intent)
     }
 

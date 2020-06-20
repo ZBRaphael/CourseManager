@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.startrace.R
+import com.example.startrace.adapter.GalleryAdapter
 import com.example.startrace.adapter.HomeAdapter
 import com.example.startrace.base.BaseFragment
 import com.example.startrace.model.GalleryViewModel
@@ -24,14 +25,14 @@ import java.io.IOException
 class GalleryFragment : BaseFragment() {
 
     override fun initView(): View? {
-        return View.inflate(context, R.layout.fragment_home, null)
+        return View.inflate(context, R.layout.fragment_gallery, null)
     }
 
     override fun initListener() {
         //初始化cyclerview
         recyclerview.layoutManager = LinearLayoutManager(context)
         //适配
-        val adapter = HomeAdapter()
+        val adapter = GalleryAdapter()
         recyclerview.adapter = adapter
 
     }

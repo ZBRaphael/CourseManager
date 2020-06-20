@@ -1,6 +1,9 @@
 package com.example.startrace.ui.activity
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
+import android.widget.ProgressBar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 
@@ -27,6 +30,7 @@ class MainActivity : BaseActivity(), ToolBarManager {
         fab.setOnClickListener { view ->
 
         }
+        fab.hide()
     }
 
 

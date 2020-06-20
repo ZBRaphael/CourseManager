@@ -22,11 +22,53 @@
         android:hint="用户名"
         android:inputType="text"
         android:imeOptions="actionNext"/>
-    <Spinner
-        android:id="@+id/planets_spinner"
+    <LinearLayout
+
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/planets_array"/>
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业："
+            android:textSize="18sp"/>
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/planets_array" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user_center_mobile" />
+
+        <EditText
+            android:id="@+id/tell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="联系方式"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/password"
