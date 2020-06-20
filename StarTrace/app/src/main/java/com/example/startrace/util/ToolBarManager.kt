@@ -32,7 +32,8 @@ interface ToolBarManager {
             }
         })
     }
-    fun initSettingToolBar(){
-        toolbar.setTitle("设置界面")
+    fun initSettingToolBar(title:String){
+        toolbar.setTitle(title)
+
     }
 }

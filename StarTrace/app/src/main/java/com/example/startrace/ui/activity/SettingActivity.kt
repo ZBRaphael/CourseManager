@@ -19,7 +19,7 @@ class SettingActivity : BaseActivity(), ToolBarManager {
     }
     override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     override fun initData() {
-        initSettingToolBar()
+        initSettingToolBar("设置界面")
         //获取推送没有被选中
         val sp = PreferenceManager.getDefaultSharedPreferences(this)
         sp.getBoolean("push",false)

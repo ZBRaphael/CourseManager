@@ -1,22 +1,27 @@
 package com.example.startrace.ui.activity
 
 import android.graphics.Color
+import android.preference.PreferenceManager
 import android.util.Log
 import android.view.View
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.startrace.R
 import com.example.startrace.adapter.HomeAdapter
 import com.example.startrace.adapter.ResultAdapter
 import com.example.startrace.base.BaseActivity
+import com.example.startrace.util.ToolBarManager
 import com.example.startrace.util.URLProviderUtils
 import kotlinx.android.synthetic.main.fragment_home.*
 import okhttp3.*
+import org.jetbrains.anko.find
 import java.io.IOException
 
-class CourseResultActivity:BaseActivity() {
+class CourseResultActivity() :BaseActivity(), ToolBarManager {
     override fun getLayoutId(): Int {
         return R.layout.resultactivity
     }
+    override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     val adapter by lazy { ResultAdapter() }
 
 
@@ -36,6 +41,9 @@ class CourseResultActivity:BaseActivity() {
     }
 
     override fun initData() {
+        initSettingToolBar("课程列表")
+        val sp = PreferenceManager.getDefaultSharedPreferences(this)
+        sp.getBoolean("push",false)
         loadDatas()
     }
     private fun loadDatas(){
