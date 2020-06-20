@@ -20,9 +20,18 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return 20
+        return 20+1
     }
 
+    override fun getItemViewType(position: Int): Int {
+        if(position == 20){
+            //最后一条
+            return 1
+        }
+        else{
+            return 0
+        }
+    }
     override fun onBindViewHolder(holder: HomeHolder, position: Int) {
 
     }
