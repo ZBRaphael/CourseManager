@@ -15,7 +15,7 @@
 11-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:4:18-60
 12
 13    <application
-13-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:5:5-26:19
+13-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:5:5-28:19
 14        android:allowBackup="true"
 14-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -64,17 +64,23 @@
 36        <activity android:name="com.example.startrace.ui.activity.RegisterActivity" />
 36-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:25:9-65
 36-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:25:19-63
-37
-38        <provider
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-40            android:authorities="com.example.startrace.lifecycle-process"
-40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-41            android:exported="false"
-41-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-42            android:multiprocess="true" />
-42-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-43    </application>
-44
-45</manifest>
+37        <activity android:name="com.example.startrace.ui.activity.CourseInfoActivity" />
+37-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:26:9-67
+37-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:26:19-65
+38        <activity android:name="com.example.startrace.ui.activity.CourseResultActivity" />
+38-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:27:9-69
+38-->/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace/app/src/main/AndroidManifest.xml:27:19-67
+39
+40        <provider
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+41            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+41-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+42            android:authorities="com.example.startrace.lifecycle-process"
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+43            android:exported="false"
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+44            android:multiprocess="true" />
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/zhangbo/.gradle/caches/transforms-2/files-2.1/6691aba6a07a208173ad67bb9ac35036/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+45    </application>
+46
+47</manifest>

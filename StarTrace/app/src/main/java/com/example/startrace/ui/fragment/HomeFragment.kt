@@ -16,12 +16,15 @@ import com.example.startrace.R
 import com.example.startrace.adapter.HomeAdapter
 import com.example.startrace.base.BaseFragment
 import com.example.startrace.model.HomeViewModel
+import com.example.startrace.presenter.interf.HomePresenterImpl
 import com.example.startrace.util.URLProviderUtils
 import kotlinx.android.synthetic.main.fragment_home.*
 import okhttp3.*
 import java.io.IOException
 
 class HomeFragment : BaseFragment() {
+    val adapter by lazy { HomeAdapter() }
+
     override fun initView(): View? {
         return View.inflate(context,R.layout.fragment_home,null)
     }
@@ -30,7 +33,6 @@ class HomeFragment : BaseFragment() {
         //初始化cyclerview
         recyclerview.layoutManager = LinearLayoutManager(context)
         //适配
-        val adapter = HomeAdapter()
         recyclerview.adapter = adapter
         //初始化刷新控件
         refreshLayout.setColorSchemeColors(Color.RED,Color.YELLOW,Color.GREEN)

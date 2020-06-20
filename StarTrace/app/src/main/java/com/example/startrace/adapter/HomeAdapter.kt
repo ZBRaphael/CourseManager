@@ -1,8 +1,15 @@
 package com.example.startrace.adapter
 
+import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.view.menu.MenuView
+import androidx.core.content.ContextCompat.startActivity
+import org.jetbrains.anko.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.startrace.ui.activity.CourseInfoActivity
+import com.example.startrace.ui.activity.MainActivity
 import com.example.startrace.widget.HomeItemView
 
 /**
@@ -16,11 +23,12 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeHolder {
+
         return HomeHolder(HomeItemView(parent.context))
     }
 
     override fun getItemCount(): Int {
-        return 20+1
+        return 20
     }
 
     override fun getItemViewType(position: Int): Int {
@@ -33,6 +41,13 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
         }
     }
     override fun onBindViewHolder(holder: HomeHolder, position: Int) {
-
+        val itemView = holder.itemView
+        itemView.setOnClickListener{
+            val intent = Intent(it.context,
+                CourseInfoActivity::class.java)
+            intent.putExtra("from","login")
+            it.context.startActivity(intent)
+        }
     }
+
 }

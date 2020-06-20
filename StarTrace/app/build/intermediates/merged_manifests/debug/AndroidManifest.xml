@@ -34,6 +34,8 @@
         <activity android:name="com.example.startrace.ui.activity.SettingActivity" />
         <activity android:name="com.example.startrace.ui.activity.AboutActivity" />
         <activity android:name="com.example.startrace.ui.activity.RegisterActivity" />
+        <activity android:name="com.example.startrace.ui.activity.CourseInfoActivity" />
+        <activity android:name="com.example.startrace.ui.activity.CourseResultActivity" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

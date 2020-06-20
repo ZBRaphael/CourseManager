@@ -1258,6 +1258,13 @@ id homeAsUp
 id home_card_date
 id home_card_loacl
 id home_card_teacher
+id home_info_date
+id home_info_hours
+id home_info_local
+id home_info_login
+id home_info_teacher
+id home_info_time
+id home_info_title
 id icon
 id icon_group
 id iconsOnly
@@ -1471,6 +1478,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about
+layout activity_courseinfo
 layout activity_login
 layout activity_main
 layout activity_register
@@ -1504,6 +1512,7 @@ layout fragment_home
 layout fragment_user
 layout item_gallery
 layout item_home
+layout item_result
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1512,11 +1521,13 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout resultactivity
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toolbar
+layout view_loadmore
 menu main
 mipmap audio_anim_01
 mipmap audio_anim_02

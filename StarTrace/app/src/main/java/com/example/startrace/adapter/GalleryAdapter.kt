@@ -1,16 +1,11 @@
 package com.example.startrace.adapter
 
-import android.util.Log
+import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.startrace.R
-import com.example.startrace.util.URLProviderUtils
+import com.example.startrace.ui.activity.CourseInfoActivity
 import com.example.startrace.widget.GalleryItemView
-import com.example.startrace.widget.HomeItemView
-import kotlinx.android.synthetic.main.fragment_home.*
-import okhttp3.*
 import java.io.IOException
 
 /**
@@ -35,6 +30,12 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.GalleryHolder>() {
     }
 
     override fun onBindViewHolder(holder: GalleryHolder, position: Int) {
-
+        val itemView = holder.itemView
+        itemView.setOnClickListener{
+            val intent = Intent(it.context,
+                CourseInfoActivity::class.java)
+            intent.putExtra("from","select")
+            it.context.startActivity(intent)
+        }
     }
 }
