@@ -29,6 +29,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val btn:Button = findViewById<Button>(R.id.home_info_login)
+        val btn_cancel:Button = findViewById<Button>(R.id.home_info_cancel)
         when(intent.getStringExtra("from")){
             "sigin"->{
                 btn.text = "签到"
@@ -41,9 +42,11 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                 btn.setOnClickListener{
                     TODO("等待接口")
                 }
+                btn_cancel.visibility = View.INVISIBLE
             }
             "result"->{
                 btn.visibility = View.INVISIBLE
+                btn_cancel.visibility = View.INVISIBLE
             }
         }
     }

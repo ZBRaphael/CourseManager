@@ -23,7 +23,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="110dp"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -48,12 +48,12 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="0dp"
                 android:layout_centerHorizontal="true"
                 android:maxLines="1"
                 android:text="@string/string_course"
                 android:textColor="#FFF"
-                android:textSize="25sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/home_card_teacher"
@@ -61,14 +61,14 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
                 android:layout_marginRight="5dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginBottom="70dp"
+                android:layout_marginTop="30dp"
                 android:maxLines="1"
                 android:text="@string/string_teacher"
                 android:textColor="#FFF"
-                android:textSize="17sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/home_card_date"
@@ -76,13 +76,13 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
                 android:layout_marginRight="5dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginTop="50dp"
                 android:maxLines="1"
                 android:text="@string/string_time"
                 android:textColor="#FFF"
-                android:textSize="17sp"
+                android:textSize="12sp"
                 android:layout_marginEnd="5dp" />
             <TextView
                 android:id="@+id/home_card_loacl"
@@ -90,15 +90,14 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
                 android:layout_marginRight="5dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="70dp"
                 android:maxLines="1"
                 android:text="@string/string_local"
                 android:textColor="#FFF"
-                android:textSize="17sp"
+                android:textSize="12sp"
                 android:layout_marginEnd="5dp" />
-
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
