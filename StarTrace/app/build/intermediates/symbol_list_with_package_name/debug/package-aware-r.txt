@@ -1258,6 +1258,7 @@ id homeAsUp
 id home_card_date
 id home_card_loacl
 id home_card_teacher
+id home_info_cancel
 id home_info_date
 id home_info_hours
 id home_info_local
