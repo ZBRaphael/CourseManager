@@ -3,11 +3,12 @@ package com.typhoon.demo.pojo;
 import java.util.Date;
 
 public class attendclass {
+    private int attendClassId;
     private int courseId;
     private int stuId;
     private String stuUsername;
     private String stuTell;
-    private Date courseDate;
+    private String courseDate;
     private String courseLocation;
     private int isAttend;
     private int isCanceledByStu;
@@ -16,7 +17,8 @@ public class attendclass {
     public attendclass() {
     }
 
-    public attendclass(int courseId, int stuId, String stuUsername, String stuTell, Date courseDate, String courseLocation, int isAttend, int isCanceledByStu, int isCanceledByTea) {
+    public attendclass(int attendClassId, int courseId, int stuId, String stuUsername, String stuTell, String courseDate, String courseLocation, int isAttend, int isCanceledByStu, int isCanceledByTea) {
+        this.attendClassId = attendClassId;
         this.courseId = courseId;
         this.stuId = stuId;
         this.stuUsername = stuUsername;
@@ -26,6 +28,14 @@ public class attendclass {
         this.isAttend = isAttend;
         this.isCanceledByStu = isCanceledByStu;
         this.isCanceledByTea = isCanceledByTea;
+    }
+
+    public int getAttendClassId() {
+        return attendClassId;
+    }
+
+    public void setAttendClassId(int attendClassId) {
+        this.attendClassId = attendClassId;
     }
 
     public int getCourseId() {
@@ -60,11 +70,11 @@ public class attendclass {
         this.stuTell = stuTell;
     }
 
-    public Date getCourseDate() {
+    public String getCourseDate() {
         return courseDate;
     }
 
-    public void setCourseDate(Date courseDate) {
+    public void setCourseDate(String courseDate) {
         this.courseDate = courseDate;
     }
 

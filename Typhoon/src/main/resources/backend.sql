@@ -3,8 +3,8 @@ CREATE TABLE STUDENT(
 	stuUsername varchar(128),
 	stuPassword varchar(32),
 	interest varchar(64),
-	stuRemainingClassHour int,
-	stuTotalClassHour int,
+	stuRemainingClassHour int default 0,
+	stuTotalClassHour int default 0,
 	stuTell varchar(64)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 CREATE TABLE TEACHER(

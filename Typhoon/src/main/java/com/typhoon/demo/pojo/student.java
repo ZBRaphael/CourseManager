@@ -6,18 +6,28 @@ public class student {
     private String stuPassword;
     private String interest;
     private int stuRemainingClassHour;
+    private int stuTotalClassHour;
     private String stuTell;
 
     public student() {
     }
 
-    public student(int stuId, String stuUsername, String stuPassword, String interest, int stuRemainingClassHour, String stuTell) {
+    public student(int stuId, String stuUsername, String stuPassword, String interest, int stuRemainingClassHour, int stuTotalClassHour, String stuTell) {
         this.stuId = stuId;
         this.stuUsername = stuUsername;
         this.stuPassword = stuPassword;
         this.interest = interest;
         this.stuRemainingClassHour = stuRemainingClassHour;
+        this.stuTotalClassHour = stuTotalClassHour;
         this.stuTell = stuTell;
+    }
+
+    public int getStuTotalClassHour() {
+        return stuTotalClassHour;
+    }
+
+    public void setStuTotalClassHour(int stuTotalClassHour) {
+        this.stuTotalClassHour = stuTotalClassHour;
     }
 
     public int getStuId() {
