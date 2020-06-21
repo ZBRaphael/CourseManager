@@ -8,7 +8,7 @@
         <tab
             id="@+id/tab_gallery"
             icon="@drawable/ic_menu_gallery"
-            title="已发布课程" />
+            title="全部课程" />
         <tab
             id="@+id/tab_slideshow"
             icon="@drawable/ic_menu_slideshow"

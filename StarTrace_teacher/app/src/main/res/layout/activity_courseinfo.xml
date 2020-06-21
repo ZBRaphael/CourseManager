@@ -18,7 +18,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="483dp"
+                android:layout_height="410dp"
                 android:background="@mipmap/login_bk"
                 android:orientation="vertical">
 
@@ -98,9 +98,29 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_login"
                 android:gravity="center"
-                android:text="签到"
+                android:text="查看签到"
                 android:textColor="@android:color/white"
                 android:textSize="22sp" />
+                <Button
+                    android:id="@+id/home_info_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_login"
+                    android:gravity="center"
+                    android:text="上课"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+                <Button
+                    android:id="@+id/home_info_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_login"
+                    android:gravity="center"
+                    android:text="取消课程"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
             </LinearLayout>
 
         </LinearLayout>

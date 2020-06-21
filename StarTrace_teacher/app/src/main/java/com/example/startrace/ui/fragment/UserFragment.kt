@@ -25,11 +25,5 @@ class UserFragment : BaseFragment() {
             startActivity(intent)
 
         }
-        val btn_result = view.findViewById<Button>(R.id.result)
-        btn_result.setOnClickListener{
-            val intent = Intent(activity,
-                CourseResultActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

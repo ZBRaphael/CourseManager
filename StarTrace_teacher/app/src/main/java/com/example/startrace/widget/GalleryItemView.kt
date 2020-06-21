@@ -19,6 +19,6 @@ class GalleryItemView: RelativeLayout {
      * 初始化的方法
      */
     init {
-        View.inflate(context, R.layout.item_gallery,this)
+        View.inflate(context, R.layout.item_result,this)
     }
 }

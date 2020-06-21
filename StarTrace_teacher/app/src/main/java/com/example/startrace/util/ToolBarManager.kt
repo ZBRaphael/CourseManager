@@ -15,7 +15,7 @@ import com.example.startrace.ui.activity.SettingActivity
 interface ToolBarManager {
     val toolbar: Toolbar
     fun initToolBar(){
-        toolbar.setTitle("星迹")
+        toolbar.setTitle(R.string.app_name)
         toolbar.inflateMenu(R.menu.main)
         toolbar.setOnMenuItemClickListener(object :Toolbar.OnMenuItemClickListener{
 

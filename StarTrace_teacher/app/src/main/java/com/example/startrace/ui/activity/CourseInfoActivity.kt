@@ -29,22 +29,18 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val btn:Button = findViewById<Button>(R.id.home_info_login)
+        val btn_in:Button = findViewById<Button>(R.id.home_info_in)
+        val btn_out:Button = findViewById<Button>(R.id.home_info_out)
         when(intent.getStringExtra("from")){
-            "sigin"->{
-                btn.text = "签到"
-                btn.setOnClickListener{
-                    TODO("等待接口")
-                }
-            }
             "select"->{
-                btn.text = "选课"
-                btn.setOnClickListener{
-                    TODO("等待接口")
-                }
+                btn.text = "已完成"
+                btn.isEnabled = false
+                btn_in.visibility = View.INVISIBLE
+                btn_out.visibility = View.INVISIBLE
             }
-            "result"->{
-                btn.visibility = View.INVISIBLE
-            }
+        }
+        btn.setOnClickListener{
+
         }
     }
 }

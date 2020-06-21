@@ -93,7 +93,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_height="302dp"
                 android:background="@mipmap/login_bk"
                 android:orientation="vertical">
 
@@ -103,19 +103,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
-                    android:text="专业："
+                    android:text="方向："
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
 
-
-                <TextView
-                    android:id="@+id/ll_hours"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="剩余课时："
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/ll_totalhours"
@@ -132,16 +123,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-            <Button
-                android:id="@+id/result"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/btn_login"
-                android:gravity="center"
-                android:text="上课记录"
-                android:textColor="@android:color/white"
-                android:textSize="22sp" />
             <Button
                 android:id="@+id/logout"
                 android:layout_width="match_parent"

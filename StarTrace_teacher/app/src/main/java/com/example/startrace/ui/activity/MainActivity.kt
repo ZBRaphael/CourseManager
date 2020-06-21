@@ -30,7 +30,6 @@ class MainActivity : BaseActivity(), ToolBarManager {
         fab.setOnClickListener { view ->
 
         }
-        fab.hide()
     }
 
 
