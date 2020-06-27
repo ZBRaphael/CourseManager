@@ -1372,6 +1372,7 @@ id src_over
 id standard
 id start
 id stretch
+id stu_username
 id submenuarrow
 id submit_area
 id tabMode

@@ -16,10 +16,14 @@ import com.example.startrace.R
 import com.example.startrace.adapter.HomeAdapter
 import com.example.startrace.base.BaseFragment
 import com.example.startrace.data.model.LoggedInUser
+import com.example.startrace.model.CourseBean
 import com.example.startrace.model.HomeViewModel
 import com.example.startrace.presenter.interf.HomePresenterImpl
 import com.example.startrace.util.PersistentCookieStore
+import com.example.startrace.util.ThreadUtil
 import com.example.startrace.util.URLProviderUtils
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.fragment_home.*
 import okhttp3.*
 import java.io.IOException
@@ -30,7 +34,7 @@ class HomeFragment : BaseFragment() {
     var username = ""
     var sessionId = ""
     override fun initView(): View? {
-        return View.inflate(context,R.layout.fragment_home,null)
+        return View.inflate(context, R.layout.fragment_home, null)
     }
 
     override fun initListener() {
@@ -39,14 +43,11 @@ class HomeFragment : BaseFragment() {
         //适配
         recyclerview.adapter = adapter
         //初始化刷新控件
-        refreshLayout.setColorSchemeColors(Color.RED,Color.YELLOW,Color.GREEN)
+        refreshLayout.setColorSchemeColors(Color.RED, Color.YELLOW, Color.GREEN)
         //刷新监听
         refreshLayout.setOnRefreshListener {
             //刷新监听
-            val intent = activity?.intent
-            username = intent?.getStringExtra("username").toString();
-            sessionId = intent?.getStringExtra("sessionId").toString();
-            println("$username,$sessionId")
+
             loadDatas()
         }
 
@@ -57,35 +58,21 @@ class HomeFragment : BaseFragment() {
 
         loadDatas()
     }
-    private fun loadDatas(){
+
+    private fun loadDatas() {
+        val intent = activity?.intent
+        username = intent?.getStringExtra("username").toString();
+        sessionId = intent?.getStringExtra("sessionId").toString();
+        println("$username,$sessionId")
         val path = URLProviderUtils.queryAllCourse()
         val builder = FormBody.Builder()
         val formBody = builder.build()
-        val cookieStore: ConcurrentHashMap<String, List<Cookie>> =
-            ConcurrentHashMap()
-        val mOkHttpClient = OkHttpClient.Builder()
-            .cookieJar(object : CookieJar {
-                //这里可以做cookie传递，保存等操作
-                override fun saveFromResponse(
-                    url: HttpUrl,
-                    cookies: List<Cookie>
-                ) { //可以做保存cookies操作
-                    cookieStore.put(url.host, cookies)
-                    sessionId = cookies.toString()
-                    println("cookies:$cookies")
-                }
-
-                override fun loadForRequest(url: HttpUrl): List<Cookie> { //加载新的cookies
-
-                    val cookies: List<Cookie>? = cookieStore.get(url.host)
-                    return cookies ?: ArrayList()
-                }
-            })
-            .build()
+        val mOkHttpClient = OkHttpClient()
         Log.v("stu", formBody.toString())
 
         val request = Request.Builder()
             .url(path)
+            .header("Cookie", sessionId)
             .post(formBody)
             .build()
         mOkHttpClient.newCall(request).enqueue(object : Callback {
@@ -93,7 +80,7 @@ class HomeFragment : BaseFragment() {
              * 子线程调用
              */
             override fun onFailure(call: Call, e: IOException) {
-                refreshLayout.isRefreshing  = false
+                refreshLayout.isRefreshing = false
                 Log.v("http", "获取数据出错：" + path)
                 throw(e)
             }
@@ -103,17 +90,32 @@ class HomeFragment : BaseFragment() {
              */
 
             override fun onResponse(call: Call, response: Response) {
-                refreshLayout.isRefreshing  = false
+                refreshLayout.isRefreshing = false
 
                 Log.v("http", "获取数据成功：" + Thread.currentThread().name)
-                val result = response.body?.string().toString()
-                println(result)
+                val result = response.body?.string()
+                val gson = Gson()
+                val list = gson.fromJson<List<CourseBean>>(
+                    result,
+                    object : TypeToken<List<CourseBean>>() {}.type
+                )
+                var filtedList: List<CourseBean> = list.filter {
+                    it.isCanceledByStu == 1
+                }
 
+                ThreadUtil.runOnMainThread(object : Runnable {
+                    override fun run() {
+                        //刷新列表
+                        adapter.upDataList(filtedList)
 
-
+                    }
+                })
             }
-
         })
+
+
     }
 
 }
+
+

@@ -6,7 +6,8 @@ package com.example.startrace.model
  * Describe:
  **/
 data class StuInfoBean(
-    val stuId:String,
-    val stuUsername:String,
-    val stuTell:String
+    val stuRestHour: Int,
+    val stuTell: String,
+    val stuTotalHour: Int,
+    val stuUsername: String
 )

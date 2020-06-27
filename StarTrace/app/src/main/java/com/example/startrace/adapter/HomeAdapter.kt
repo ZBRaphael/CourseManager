@@ -8,6 +8,7 @@ import androidx.appcompat.view.menu.MenuView
 import androidx.core.content.ContextCompat.startActivity
 import org.jetbrains.anko.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.startrace.model.CourseBean
 import com.example.startrace.ui.activity.CourseInfoActivity
 import com.example.startrace.ui.activity.MainActivity
 import com.example.startrace.widget.HomeItemView
@@ -18,6 +19,12 @@ import com.example.startrace.widget.HomeItemView
  * Describe:
  **/
 class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
+    private var list = ArrayList<CourseBean>()
+    fun upDataList(list:List<CourseBean>){
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+    }
     class HomeHolder(itemView:View):RecyclerView.ViewHolder(itemView){
 
     }
@@ -28,7 +35,7 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return 20
+        return list.size
     }
 
     override fun getItemViewType(position: Int): Int {
@@ -41,7 +48,9 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
         }
     }
     override fun onBindViewHolder(holder: HomeHolder, position: Int) {
-        val itemView = holder.itemView
+        val data = list[position]
+        val itemView = holder.itemView as HomeItemView
+        itemView.setdata(data)
         itemView.setOnClickListener{
             val intent = Intent(it.context,
                 CourseInfoActivity::class.java)

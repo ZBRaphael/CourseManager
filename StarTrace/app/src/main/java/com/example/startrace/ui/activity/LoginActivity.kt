@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.startrace.R
 import com.example.startrace.base.BaseActivity
 import com.example.startrace.ui.login.LoginViewModel
+import com.example.startrace.util.ThreadUtil
 import com.example.startrace.util.URLProviderUtils
 import okhttp3.*
 import java.io.IOException
@@ -18,7 +19,7 @@ import java.util.concurrent.ConcurrentHashMap
 class LoginActivity : BaseActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
-    var sessoionId = ""
+    var sessionId = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -54,7 +55,10 @@ class LoginActivity : BaseActivity() {
                         cookies: List<Cookie>
                     ) { //可以做保存cookies操作
                         cookieStore.put(url.host, cookies)
-                        sessoionId = cookies.toString()
+//                        println(cookies[0].hostOnly)
+                        val cookieStr = StringBuilder();
+                        cookieStr.append(cookies[0].name).append("=").append(cookies[0].value + ";");
+                        sessionId = cookieStr.toString()
                         println("cookies:$cookies")
                     }
 
@@ -93,8 +97,14 @@ class LoginActivity : BaseActivity() {
                     println("result：$result")
                     if (result == "success") {
                         updateUiWithUser(username.text.toString())
-                    } else {
+                    }
+                    else{
 
+                        Toast.makeText(
+                            applicationContext,
+                            "密码错误或用户不存在",
+                            Toast.LENGTH_LONG
+                        ).show()
                     }
 
 
@@ -113,19 +123,25 @@ class LoginActivity : BaseActivity() {
     }
 
     private fun updateUiWithUser(username: String) {
-//        val welcome = getString(R.string.welcome)
-//        Toast.makeText(
-//            applicationContext,
-//            "$welcome $username",
-//            Toast.LENGTH_LONG
-//        ).show()
+        ThreadUtil.runOnMainThread(object : Runnable {
+            override fun run() {
+                //tanchuang
+                val welcome = getString(R.string.welcome)
+                Toast.makeText(
+                    applicationContext,
+                    "$welcome $username",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        })
+
 
         val intent = Intent(
             this,
             MainActivity::class.java
         )
         intent.putExtra("username", username);
-        intent.putExtra("sessionId",sessoionId);
+        intent.putExtra("sessionId",sessionId);
         startActivity(intent)
     }
 

@@ -6,14 +6,24 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import com.example.startrace.R
+import com.example.startrace.adapter.HomeAdapter
 import com.example.startrace.base.BaseFragment
+import com.example.startrace.model.CourseBean
+import com.example.startrace.model.StuInfoBean
 import com.example.startrace.ui.activity.CourseResultActivity
 import com.example.startrace.ui.activity.LoginActivity
+import com.example.startrace.util.ThreadUtil
 import com.example.startrace.util.URLProviderUtils
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_user.*
 import okhttp3.*
 import java.io.IOException
 
 class UserFragment : BaseFragment() {
+    var username = ""
+    var sessionId = ""
 
 
 
@@ -27,25 +37,27 @@ class UserFragment : BaseFragment() {
     }
 
     private fun loadDatas() {
-        val path = URLProviderUtils.loginUrl()
+        val intent = activity?.intent
+        username = intent?.getStringExtra("username").toString();
+        sessionId = intent?.getStringExtra("sessionId").toString();
+        println("$username,$sessionId")
+        val path = URLProviderUtils.getMyInfo()
         val builder = FormBody.Builder()
-        builder.add("stuUsername", "aab")
-        builder.add("stuPassword", "123456")
         val formBody = builder.build()
-        val client = OkHttpClient()
-        Log.v("http", formBody.toString())
+        val mOkHttpClient = OkHttpClient()
+        Log.v("stu", formBody.toString())
 
         val request = Request.Builder()
             .url(path)
+            .header("Cookie", sessionId)
             .post(formBody)
             .build()
-        client.newCall(request).enqueue(object : Callback {
+        mOkHttpClient.newCall(request).enqueue(object : Callback {
             /**
              * 子线程调用
              */
             override fun onFailure(call: Call, e: IOException) {
-
-                Log.v("http","获取数据出错："+path)
+                Log.v("http", "获取数据出错：" + path)
                 throw(e)
             }
 
@@ -55,11 +67,26 @@ class UserFragment : BaseFragment() {
 
             override fun onResponse(call: Call, response: Response) {
 
-                Log.v("http","获取数据成功："+Thread.currentThread().name)
+                Log.v("http", "获取数据成功：" + Thread.currentThread().name)
                 val result = response.body?.string()
-                println("result：$result")
-            }
+                println(result)
+                val gson = Gson()
+                val stuInfo = gson.fromJson<StuInfoBean>(
+                    result,
+                    object : TypeToken<StuInfoBean>() {}.type
+                )
 
+                ThreadUtil.runOnMainThread(object : Runnable {
+                    override fun run() {
+                        //刷新列表
+                        stu_username.text = stuInfo.stuUsername
+                        phone.text = stuInfo.stuTell
+                        ll_hours.text = "剩余课时："+stuInfo.stuRestHour.toString()
+                        ll_totalhours.text ="已上课总课时："+stuInfo.stuTotalHour.toString()
+
+                    }
+                })
+            }
         })
     }
 

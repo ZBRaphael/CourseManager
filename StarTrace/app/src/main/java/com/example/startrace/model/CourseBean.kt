@@ -9,10 +9,20 @@ import java.util.*
  **/
 
 data class CourseBean(
-    val courseId:String,
-    val courseStartDate:String,
-    val courseLocation:String,
-    val isCanceledByStu:String,
-    val isCanceledByTea:String,
-    val Enrollments:List<StuInfoBean>
+    val Enrollments: List<Enrollment>,
+    val attendClassId: Int,
+    val courseCostHour: Int,
+    val courseDate: String,
+    val courseDescription: String,
+    val courseId: Int,
+    val courseLocation: String,
+    val interest: String,
+    val isAttend: Int,
+    val isCanceledByStu: Int
+)
+
+data class Enrollment(
+    val stuId: Int,
+    val stuTell: String,
+    val stuUsername: String
 )
