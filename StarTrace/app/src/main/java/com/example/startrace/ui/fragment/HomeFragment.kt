@@ -15,16 +15,20 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.startrace.R
 import com.example.startrace.adapter.HomeAdapter
 import com.example.startrace.base.BaseFragment
+import com.example.startrace.data.model.LoggedInUser
 import com.example.startrace.model.HomeViewModel
 import com.example.startrace.presenter.interf.HomePresenterImpl
+import com.example.startrace.util.PersistentCookieStore
 import com.example.startrace.util.URLProviderUtils
 import kotlinx.android.synthetic.main.fragment_home.*
 import okhttp3.*
 import java.io.IOException
+import java.util.concurrent.ConcurrentHashMap
 
 class HomeFragment : BaseFragment() {
     val adapter by lazy { HomeAdapter() }
-
+    var username = ""
+    var sessionId = ""
     override fun initView(): View? {
         return View.inflate(context,R.layout.fragment_home,null)
     }
@@ -39,29 +43,59 @@ class HomeFragment : BaseFragment() {
         //刷新监听
         refreshLayout.setOnRefreshListener {
             //刷新监听
+            val intent = activity?.intent
+            username = intent?.getStringExtra("username").toString();
+            sessionId = intent?.getStringExtra("sessionId").toString();
+            println("$username,$sessionId")
             loadDatas()
         }
 
     }
 
     override fun initData() {
+
+
         loadDatas()
     }
     private fun loadDatas(){
-        val path = URLProviderUtils.getHomeUrl(0,20)
-        val client = OkHttpClient()
+        val path = URLProviderUtils.queryAllCourse()
+        val builder = FormBody.Builder()
+        val formBody = builder.build()
+        val cookieStore: ConcurrentHashMap<String, List<Cookie>> =
+            ConcurrentHashMap()
+        val mOkHttpClient = OkHttpClient.Builder()
+            .cookieJar(object : CookieJar {
+                //这里可以做cookie传递，保存等操作
+                override fun saveFromResponse(
+                    url: HttpUrl,
+                    cookies: List<Cookie>
+                ) { //可以做保存cookies操作
+                    cookieStore.put(url.host, cookies)
+                    sessionId = cookies.toString()
+                    println("cookies:$cookies")
+                }
+
+                override fun loadForRequest(url: HttpUrl): List<Cookie> { //加载新的cookies
+
+                    val cookies: List<Cookie>? = cookieStore.get(url.host)
+                    return cookies ?: ArrayList()
+                }
+            })
+            .build()
+        Log.v("stu", formBody.toString())
+
         val request = Request.Builder()
             .url(path)
-            .get()
+            .post(formBody)
             .build()
-        client.newCall(request).enqueue(object : Callback {
+        mOkHttpClient.newCall(request).enqueue(object : Callback {
             /**
              * 子线程调用
              */
             override fun onFailure(call: Call, e: IOException) {
-                //隐藏刷新控件
-                refreshLayout.isRefreshing = false
-                Log.v("http","获取数据出错："+path)
+                refreshLayout.isRefreshing  = false
+                Log.v("http", "获取数据出错：" + path)
+                throw(e)
             }
 
             /**
@@ -69,9 +103,14 @@ class HomeFragment : BaseFragment() {
              */
 
             override fun onResponse(call: Call, response: Response) {
-                //隐藏刷新控件
-                refreshLayout.isRefreshing = false
-                Log.v("http","获取数据成功："+Thread.currentThread().name)
+                refreshLayout.isRefreshing  = false
+
+                Log.v("http", "获取数据成功：" + Thread.currentThread().name)
+                val result = response.body?.string().toString()
+                println(result)
+
+
+
             }
 
         })

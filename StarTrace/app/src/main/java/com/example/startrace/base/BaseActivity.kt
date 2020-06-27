@@ -15,6 +15,7 @@ abstract class BaseActivity: AppCompatActivity(),AnkoLogger {
         initData()
     }
 
+
     /**
      * 初始化数据
      */

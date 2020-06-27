@@ -42,7 +42,7 @@ class GalleryFragment : BaseFragment() {
     }
 
     private fun loadDatas() {
-        val path = URLProviderUtils.getHomeUrl(0, 20)
+        val path = URLProviderUtils.queryAllCourse()
         val client = OkHttpClient()
         val request = Request.Builder()
             .url(path)
