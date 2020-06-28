@@ -100,11 +100,17 @@ class LoginActivity : BaseActivity() {
                     }
                     else{
 
-                        Toast.makeText(
-                            applicationContext,
-                            "密码错误或用户不存在",
-                            Toast.LENGTH_LONG
-                        ).show()
+                        ThreadUtil.runOnMainThread(object : Runnable {
+                            override fun run() {
+                                //tanchuang
+
+                                Toast.makeText(
+                                    applicationContext,
+                                    "密码错误或用户不存在",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            }
+                        })
                     }
 
 
