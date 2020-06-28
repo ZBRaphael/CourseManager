@@ -42,9 +42,13 @@ dependencies {
     //bottoombar
     implementation 'com.roughike:bottom-bar:2.3.1'
     //androidx
-    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     //okhttp
     implementation("com.squareup.okhttp3:okhttp:4.7.2")
     implementation 'com.borax12.materialdaterangepicker:library:2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+
 }

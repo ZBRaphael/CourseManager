@@ -40,15 +40,6 @@ class LoginActivity : BaseActivity() {
         val username = findViewById<EditText>(R.id.username)
         val password = findViewById<EditText>(R.id.password)
         val login = findViewById<Button>(R.id.login)
-        val register = findViewById<Button>(R.id.btn_register)
-
-        register.setOnClickListener {
-            val intent = Intent(
-                this,
-                RegisterActivity::class.java
-            )
-            startActivity(intent)
-        }
 
         login.setOnClickListener {
 
@@ -112,11 +103,17 @@ class LoginActivity : BaseActivity() {
                     }
                     else{
 
-                        Toast.makeText(
-                            applicationContext,
-                            "密码错误或用户不存在",
-                            Toast.LENGTH_LONG
-                        ).show()
+                        ThreadUtil.runOnMainThread(object : Runnable {
+                            override fun run() {
+                                //tanchuang
+
+                                Toast.makeText(
+                                    applicationContext,
+                                    "密码错误或用户不存在",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            }
+                        })
                     }
 
 

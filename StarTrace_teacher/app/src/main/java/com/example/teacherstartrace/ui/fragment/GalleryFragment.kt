@@ -16,13 +16,22 @@ import com.example.teacherstartrace.R
 import com.example.teacherstartrace.adapter.GalleryAdapter
 import com.example.teacherstartrace.adapter.HomeAdapter
 import com.example.teacherstartrace.base.BaseFragment
+import com.example.teacherstartrace.model.CourseBean
 import com.example.teacherstartrace.model.GalleryViewModel
+import com.example.teacherstartrace.util.ThreadUtil
 import com.example.teacherstartrace.util.URLProviderUtils
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import kotlinx.android.synthetic.main.fragment_gallery.*
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.recyclerview
 import okhttp3.*
 import java.io.IOException
 
 class GalleryFragment : BaseFragment() {
+    val adapter by lazy { GalleryAdapter() }
+    var username = ""
+    var sessionId = ""
 
     override fun initView(): View? {
         return View.inflate(context, R.layout.fragment_gallery, null)
@@ -30,10 +39,17 @@ class GalleryFragment : BaseFragment() {
 
     override fun initListener() {
         //初始化cyclerview
-        recyclerview.layoutManager = LinearLayoutManager(context)
+        recyclerview_gallery.layoutManager = LinearLayoutManager(context)
         //适配
-        val adapter = GalleryAdapter()
-        recyclerview.adapter = adapter
+        recyclerview_gallery.adapter = adapter
+        //初始化刷新控件
+        refreshLayout_gallery.setColorSchemeColors(Color.RED, Color.YELLOW, Color.GREEN)
+        //刷新监听
+        refreshLayout_gallery.setOnRefreshListener {
+            //刷新监听
+
+            loadDatas()
+        }
 
     }
 
@@ -42,18 +58,29 @@ class GalleryFragment : BaseFragment() {
     }
 
     private fun loadDatas() {
-        val path = URLProviderUtils.getHomeUrl(0, 20)
-        val client = OkHttpClient()
+        val intent = activity?.intent
+        username = intent?.getStringExtra("username").toString();
+        sessionId = intent?.getStringExtra("sessionId").toString();
+        println("$username,$sessionId")
+        val path = URLProviderUtils.queryAllCourse()
+        val builder = FormBody.Builder()
+        val formBody = builder.build()
+        val mOkHttpClient = OkHttpClient()
+        Log.v("stu", formBody.toString())
+
         val request = Request.Builder()
             .url(path)
-            .get()
+            .header("Cookie", sessionId)
+            .post(formBody)
             .build()
-        client.newCall(request).enqueue(object : Callback {
+        mOkHttpClient.newCall(request).enqueue(object : Callback {
             /**
              * 子线程调用
              */
             override fun onFailure(call: Call, e: IOException) {
+                refreshLayout_gallery.isRefreshing = false
                 Log.v("http", "获取数据出错：" + path)
+                throw(e)
             }
 
             /**
@@ -61,9 +88,29 @@ class GalleryFragment : BaseFragment() {
              */
 
             override fun onResponse(call: Call, response: Response) {
-                Log.v("http", "获取数据出错：" + Thread.currentThread().name)
-            }
+                refreshLayout_gallery.isRefreshing = false
 
+                Log.v("http", "获取数据成功：" + Thread.currentThread().name)
+                val result = response.body?.string()
+                Log.v("http", result)
+                val gson = Gson()
+                val list = gson.fromJson<List<CourseBean>>(
+                    result,
+                    object : TypeToken<List<CourseBean>>() {}.type
+                )
+                val filtedList: List<CourseBean> = list.filter {
+                    it.isCanceledByStu == 0
+                }
+
+                ThreadUtil.runOnMainThread(object : Runnable {
+                    override fun run() {
+                        //刷新列表
+                        adapter.upDataList(filtedList,sessionId)
+
+                    }
+                })
+            }
         })
+
     }
 }

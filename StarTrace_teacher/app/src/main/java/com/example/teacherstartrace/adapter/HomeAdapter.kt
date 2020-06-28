@@ -8,6 +8,7 @@ import androidx.appcompat.view.menu.MenuView
 import androidx.core.content.ContextCompat.startActivity
 import org.jetbrains.anko.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.teacherstartrace.model.CourseBean
 import com.example.teacherstartrace.ui.activity.CourseInfoActivity
 import com.example.teacherstartrace.ui.activity.MainActivity
 import com.example.teacherstartrace.widget.HomeItemView
@@ -18,38 +19,46 @@ import com.example.teacherstartrace.widget.HomeItemView
  * Describe:
  **/
 class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
+    private var list = ArrayList<CourseBean>()
+    var sessionId = ""
+    fun upDataList(list:List<CourseBean>, sessionId:String ){
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+        this.sessionId = sessionId
+    }
     class HomeHolder(itemView:View):RecyclerView.ViewHolder(itemView){
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeAdapter.HomeHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeHolder {
 
-        return HomeAdapter.HomeHolder(
-            HomeItemView(parent.context)
-        )
+        return HomeHolder(HomeItemView(parent.context))
     }
 
     override fun getItemCount(): Int {
-        return 20
+//        Log.v("return", list.size.toString())
+        return list.size
     }
 
-    override fun getItemViewType(position: Int): Int {
-        if(position == 20){
-            //最后一条
-            return 1
-        }
-        else{
-            return 0
-        }
-    }
-    override fun onBindViewHolder(holder: HomeAdapter.HomeHolder, position: Int) {
-        val itemView = holder.itemView
+    override fun onBindViewHolder(holder: HomeHolder, position: Int) {
+        val data = list[position]
+        val itemView = holder.itemView as HomeItemView
+        itemView.setdata(data)
         itemView.setOnClickListener{
             val intent = Intent(it.context,
                 CourseInfoActivity::class.java)
-            intent.putExtra("from","login")
+            intent.putExtra("from", "sigin");
+            intent.putExtra("time", data.courseDate);
+            intent.putExtra("local", data.courseLocation);
+            intent.putExtra("cost",data.courseCostHour)
+            intent.putExtra("num_stu",data.Enrollments.size);
+            intent.putExtra("title",data.interest);
+            intent.putExtra("des",data.courseDescription);
+            intent.putExtra("session",sessionId)
             it.context.startActivity(intent)
         }
     }
+
 
 }

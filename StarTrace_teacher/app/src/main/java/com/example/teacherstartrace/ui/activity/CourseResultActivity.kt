@@ -47,33 +47,7 @@ class CourseResultActivity() : BaseActivity(), ToolBarManager {
         loadDatas()
     }
     private fun loadDatas(){
-        val path = URLProviderUtils.getHomeUrl(0,20)
-        val client = OkHttpClient()
-        val request = Request.Builder()
-            .url(path)
-            .get()
-            .build()
-        client.newCall(request).enqueue(object : Callback {
-            /**
-             * 子线程调用
-             */
-            override fun onFailure(call: Call, e: IOException) {
-                //隐藏刷新控件
-                refreshLayout.isRefreshing = false
-                Log.v("http","获取数据出错："+path)
-            }
-
-            /**
-             * 子线程调用
-             */
-
-            override fun onResponse(call: Call, response: Response) {
-                //隐藏刷新控件
-                refreshLayout.isRefreshing = false
-                Log.v("http","获取数据成功："+Thread.currentThread().name)
-            }
-
-        })
+        TODO("等待接口")
     }
 
 }

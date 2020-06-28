@@ -4,11 +4,9 @@ import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.util.Log
 import android.view.View
-import android.widget.DatePicker
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.TimePicker
+import android.widget.*
 import android.widget.TimePicker.OnTimeChangedListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -16,13 +14,19 @@ import com.example.teacherstartrace.base.BaseActivity
 import java.util.*
 import com.example.teacherstartrace.R
 import com.example.teacherstartrace.util.ToolBarManager
+import com.example.teacherstartrace.util.URLProviderUtils
+import kotlinx.android.synthetic.main.activity_addcourse.*
+import kotlinx.android.synthetic.main.activity_login.*
+import okhttp3.*
 import org.jetbrains.anko.find
+import java.io.IOException
+import java.util.concurrent.ConcurrentHashMap
 
 class AddActivity() : BaseActivity(), View.OnClickListener,
     DatePicker.OnDateChangedListener, OnTimeChangedListener, ToolBarManager {
     override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     override fun initData() {
-        initSettingToolBar("增加课程")
+        initSettingToolBar("课程列表")
         val sp = PreferenceManager.getDefaultSharedPreferences(this)
         sp.getBoolean("push",false)
 
@@ -37,6 +41,7 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
     private var day = 0
     private var hour = 0
     private var minute = 0
+    var sessionId = ""
 
     //在TextView上显示的字符
     private var date: StringBuffer? = null
@@ -50,6 +55,83 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
         time = StringBuffer()
         initView()
         initDateTime()
+        bt_send.setOnClickListener{
+            val path = URLProviderUtils.loginUrl()
+            val builder = FormBody.Builder()
+            builder.add("stuUsername", username.text.toString())
+            builder.add("stuPassword", password.text.toString())
+            val formBody = builder.build()
+            val cookieStore: ConcurrentHashMap<String, List<Cookie>> =
+                ConcurrentHashMap()
+            val mOkHttpClient = OkHttpClient.Builder()
+                .cookieJar(object : CookieJar {
+                    //这里可以做cookie传递，保存等操作
+                    override fun saveFromResponse(
+                        url: HttpUrl,
+                        cookies: List<Cookie>
+                    ) { //可以做保存cookies操作
+                        cookieStore.put(url.host, cookies)
+//                        println(cookies[0].hostOnly)
+                        val cookieStr = StringBuilder();
+                        cookieStr.append(cookies[0].name).append("=").append(cookies[0].value + ";");
+                        sessionId = cookieStr.toString()
+                        println("cookies:$cookies")
+                    }
+
+                    override fun loadForRequest(url: HttpUrl): List<Cookie> { //加载新的cookies
+                        val cookies: List<Cookie>? = cookieStore.get(url.host)
+                        return cookies ?: ArrayList()
+                    }
+                })
+                .build()
+            Log.v("stu", formBody.toString())
+
+            val request = Request.Builder()
+                .url(path)
+                .post(formBody)
+                .build()
+            mOkHttpClient.newCall(request).enqueue(object : Callback {
+                /**
+                 * 子线程调用
+                 */
+                override fun onFailure(call: Call, e: IOException) {
+
+                    Log.v("http", "获取数据出错：" + path)
+                    throw(e)
+                }
+
+                /**
+                 * 子线程调用
+                 */
+
+                override fun onResponse(call: Call, response: Response) {
+
+
+                    Log.v("http", "获取数据成功：" + Thread.currentThread().name)
+                    val result = response.body?.string().toString()
+
+                    println("result：$result")
+                    if (result == "success") {
+                        Toast.makeText(
+                            applicationContext,
+                            "注册成功",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                    else{
+
+                        Toast.makeText(
+                            applicationContext,
+                            "注册失败",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+
+
+                }
+
+            })
+        }
     }
 
     override fun getLayoutId(): Int {
