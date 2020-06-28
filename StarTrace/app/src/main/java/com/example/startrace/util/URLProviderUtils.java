@@ -11,7 +11,7 @@ public class URLProviderUtils {
      * @param size   返回数据的条目个数
      * @return url
      */
-//    static String basepath = "http://192.168.1.100:8081/stu/";
+//    private static String basepath = "http://192.168.1.100:8081/stu/";
     private static String basepath = "http://112.124.29.52:8081/stu/";
     /**
      * 登陆

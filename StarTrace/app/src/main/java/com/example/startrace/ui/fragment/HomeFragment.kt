@@ -94,6 +94,7 @@ class HomeFragment : BaseFragment() {
 
                 Log.v("http", "获取数据成功：" + Thread.currentThread().name)
                 val result = response.body?.string()
+                Log.v("http", result)
                 val gson = Gson()
                 val list = gson.fromJson<List<CourseBean>>(
                     result,
@@ -106,7 +107,7 @@ class HomeFragment : BaseFragment() {
                 ThreadUtil.runOnMainThread(object : Runnable {
                     override fun run() {
                         //刷新列表
-                        adapter.upDataList(filtedList)
+                        adapter.upDataList(filtedList,sessionId)
 
                     }
                 })

@@ -1,5 +1,6 @@
 package com.example.startrace.ui.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.appcompat.widget.Toolbar
 import com.example.startrace.R
 import com.example.startrace.base.BaseActivity
 import com.example.startrace.util.ToolBarManager
+import kotlinx.android.synthetic.main.activity_courseinfo.*
 import org.jetbrains.anko.find
 
 /**
@@ -26,6 +28,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
         sp.getBoolean("push",false)
 
     }
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val btn:Button = findViewById<Button>(R.id.home_info_login)
@@ -49,5 +52,12 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                 btn_cancel.visibility = View.INVISIBLE
             }
         }
+        home_info_title.text = intent.getStringExtra("title")
+        home_info_time.text = "时间："+intent.getStringExtra("time")
+        home_info_local.text = "地点："+intent.getStringExtra("local")
+        home_info_hours.text = "时长："+intent.getIntExtra("cost",0)
+        home_info_num.text = "已签到人数："+intent.getIntExtra("num_stu",0)
+        tv_des.text = intent.getStringExtra("des")
+
     }
 }

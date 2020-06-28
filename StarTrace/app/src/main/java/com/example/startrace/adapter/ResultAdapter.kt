@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.startrace.model.CourseBean
 import com.example.startrace.ui.activity.CourseInfoActivity
 import com.example.startrace.widget.HomeItemView
 import com.example.startrace.widget.ResultItemView
@@ -14,7 +15,15 @@ import com.example.startrace.widget.ResultItemView
  * Describe:
  **/
 class ResultAdapter: RecyclerView.Adapter<ResultAdapter.ResultHolder>() {
-    class ResultHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+    private var list = ArrayList<CourseBean>()
+    var sessionId = ""
+    fun upDataList(list:List<CourseBean>, sessionId:String ){
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+        this.sessionId = sessionId
+    }
+    class ResultHolder(itemView:View):RecyclerView.ViewHolder(itemView){
 
     }
 
@@ -24,24 +33,25 @@ class ResultAdapter: RecyclerView.Adapter<ResultAdapter.ResultHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return 20
+//        Log.v("return", list.size.toString())
+        return list.size
     }
 
-    override fun getItemViewType(position: Int): Int {
-        if(position == 20){
-            //最后一条
-            return 1
-        }
-        else{
-            return 0
-        }
-    }
     override fun onBindViewHolder(holder: ResultHolder, position: Int) {
-        val itemView = holder.itemView
+        val data = list[position]
+        val itemView = holder.itemView as ResultItemView
+        itemView.setdata(data)
         itemView.setOnClickListener{
             val intent = Intent(it.context,
                 CourseInfoActivity::class.java)
-            intent.putExtra("from","result")
+            intent.putExtra("from", "result");
+            intent.putExtra("time", data.courseDate);
+            intent.putExtra("local", data.courseLocation);
+            intent.putExtra("cost",data.courseCostHour)
+            intent.putExtra("num_stu",data.Enrollments.size);
+            intent.putExtra("title",data.interest);
+            intent.putExtra("des",data.courseDescription);
+            intent.putExtra("session",sessionId)
             it.context.startActivity(intent)
         }
     }

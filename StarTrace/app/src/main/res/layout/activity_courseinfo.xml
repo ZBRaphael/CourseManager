@@ -18,7 +18,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="453dp"
+                android:layout_height="589dp"
                 android:background="@mipmap/login_bk"
                 android:orientation="vertical">
 
@@ -36,26 +36,6 @@
                         android:textColor="@android:color/black"
                         android:textSize="25sp" />
                 </RelativeLayout>
-
-
-                <TextView
-                    android:id="@+id/home_info_teacher"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="老师"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-
-
-                <TextView
-                    android:id="@+id/home_info_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="日期："
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/home_info_time"
@@ -83,6 +63,42 @@
                     android:text="时长："
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/home_info_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="已签到人数："
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="课程描述:"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="158dp"
+                        android:layout_margin="10dp"
+                        android:gravity="start|top"
+                        android:minLines="4"
+                        android:background="#ededed"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
 
 
             </LinearLayout>

@@ -1249,6 +1249,9 @@ id fixed
 id forever
 id fragment_container_view_tag
 id fragment_setting
+id gallery_card_date
+id gallery_card_loacl
+id gallery_signin
 id ghost_view
 id gone
 id group_divider
@@ -1259,11 +1262,10 @@ id home_card_date
 id home_card_loacl
 id home_card_teacher
 id home_info_cancel
-id home_info_date
 id home_info_hours
 id home_info_local
 id home_info_login
-id home_info_teacher
+id home_info_num
 id home_info_time
 id home_info_title
 id icon
@@ -1282,6 +1284,7 @@ id line1
 id line3
 id listMode
 id list_item
+id ll_des
 id ll_hours
 id ll_interesting
 id ll_totalhours
@@ -1323,7 +1326,10 @@ id radio
 id radioButton
 id radioButton2
 id recyclerview
+id recyclerview_gallery
 id refreshLayout
+id refreshLayout_gallery
+id refreshLayout_result
 id result
 id right
 id right_icon
@@ -1410,6 +1416,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_des
 id unchecked
 id underNavbar
 id uniform

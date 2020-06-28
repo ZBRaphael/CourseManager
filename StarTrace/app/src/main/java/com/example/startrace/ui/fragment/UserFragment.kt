@@ -103,6 +103,8 @@ class UserFragment : BaseFragment() {
         btn_result.setOnClickListener{
             val intent = Intent(activity,
                 CourseResultActivity::class.java)
+            intent.putExtra("username", username);
+            intent.putExtra("sessionId",sessionId);
             startActivity(intent)
         }
     }
