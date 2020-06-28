@@ -1,5 +1,6 @@
 package com.example.teacherstartrace.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -27,7 +28,10 @@ class MainActivity : BaseActivity(), ToolBarManager {
         super.onCreate(savedInstanceState)
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
+        fab.setOnClickListener {
+            val intent = Intent(this,
+                AddActivity::class.java)
+            startActivity(intent)
 
         }
     }
@@ -45,6 +49,7 @@ class MainActivity : BaseActivity(), ToolBarManager {
             println(it.toString())
         }
     }
+
 
 
 

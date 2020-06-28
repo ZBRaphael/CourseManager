@@ -99,8 +99,8 @@ class HomeFragment : BaseFragment() {
                     result,
                     object : TypeToken<List<CourseBean>>() {}.type
                 )
-                var filtedList: List<CourseBean> = list.filter {
-                    it.isCanceledByStu == 1
+                val filtedList: List<CourseBean> = list.filter {
+                    it.isCanceledByStu == 0
                 }
 
                 ThreadUtil.runOnMainThread(object : Runnable {
