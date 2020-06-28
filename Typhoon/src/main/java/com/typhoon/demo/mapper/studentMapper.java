@@ -17,30 +17,45 @@ public interface studentMapper {
     //登录
     @Select("select * from STUDENT where stuUsername = #{stuUsername}")
     student queryStuByName(String stuUsername);
+
     //查询参与过的课程
-    @Select("select * from ATTENDCLASS where stuId = #{stuId}")
+    @Select("select * from ATTENDCLASS where stuId = #{stuId} and isCanceledByStu = 0")
     List<attendclass> stuQueryAttendCourse(int stuId);
+
+    // 查询选过的课程
+    @Select("select * from ATTENDCLASS where stuId = #{stuId}")
+    List<attendclass> stuQueryAttendCourseForAndroid(int stuId);
+
 
     //查询自己方向的课程
     @Select("select * from COURSE where interest = #{interest}")
     List<course> stuQueryRelatedClass(String interest);
 
+    // 添加课程
+    @Update("update STUDENT set stuRemainingClassHour = #{stuRemainingClassHour} where stuId = #{stuId}")
+    boolean stuAddcourse_cost(@Param("stuRemainingClassHour")int stuRemainingClassHour, @Param("stuId")int stuId);
+    @Insert("insert into ATTENDCLASS(courseId, stuId, stuUsername, stuTell, courseDate, courseLocation) values(#{courseId},#{stuId},#{stuUsername},#{stuTell},#{courseDate},#{courseLocation})")
+    boolean stuAddCourse(@Param("courseId") int courseId, @Param("stuId") int stuId, @Param("stuUsername") String stuUsername, @Param("stuTell") String stuTell, @Param("courseDate") String courseDate, @Param("courseLocation")String courseLocation);
+
     //查询自己的兴趣
     @Select("select interest from STUDENT where stuId = #{stuId}")
     String queryMyInterest(int stuId);
 
-    //参与某次课程
-    //@Insert()
-    //boolean stuAddCourse(int stuId, int courseId);
     //取消某次课程
+    @Update("update STUDENT set stuRemainingClassHour = #{courseId} + stuRemainingClassHour where stuId = #{stuId}")
+    boolean stuCancelCourseReturnCost(@Param("stuRemainingClassHour")int courseCostHour, @Param("stuId")int stuId);
+    @Update("update ATTENDCLASS set isCanceledByStu = 1 where stuId = #{stuId} and courseId = #{courseId}")
+    boolean stuCancelCourse(@Param("stuId") int stuId, @Param("courseId") int courseId);
+
 
     //签到某次课程
-    @Update("update ATTENDCLASS set isAttend = @{flag} where stuId = #{stuId} and courseId = #{courseId}")
+    @Update("update ATTENDCLASS set isAttend = #{flag} where stuId = #{stuId} and courseId = #{courseId}")
     boolean stuSign(@Param("stuId") int stuId, @Param("courseId")int courseId, @Param("flag")int flag);
 
     //查询自己的信息
     @Select("select * from STUDENT where stuId = #{stuId}")
     student stuGetMyInfo(int stuId);
-
-
+    //更新自己的个人信息
+    @Update("update STUDENT set stuUsername = #{stuUsername}, stuTell = #{stuTell}, stuPassword = #{stuPassword} where stuId = #{stuId}")
+    boolean stuUpdateInformation(@Param("stuId") int stuId, @Param("stuUsername") String stuUsername, @Param("stuPassword")String stuPassword, @Param("stuTell") String stuTell);
 }

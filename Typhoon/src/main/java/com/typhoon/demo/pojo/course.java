@@ -4,16 +4,32 @@ import java.util.Date;
 
 public class course {
     private int courseId;
-    private Date courseStartDate;
-    private Date courseEndDate;
+    private String courseStartDate;
+    private String courseEndDate;
     private int courseCostHour;
     private String courseLocation;
     private int teaId;
     private String interest;
-    private int isCanceled;
+    private int isCanceled;  // 是否被老师取消
     private String courseDescription;
 
-    public course(int courseId, Date courseStartDate, Date courseEndDate, int courseCostHour, String courseLocation, int teaId, String interest, int isCanceled, String courseDescription) {
+    public String getCourseStartDate() {
+        return courseStartDate;
+    }
+
+    public void setCourseStartDate(String courseStartDate) {
+        this.courseStartDate = courseStartDate;
+    }
+
+    public String getCourseEndDate() {
+        return courseEndDate;
+    }
+
+    public void setCourseEndDate(String courseEndDate) {
+        this.courseEndDate = courseEndDate;
+    }
+
+    public course(int courseId, String courseStartDate, String courseEndDate, int courseCostHour, String courseLocation, int teaId, String interest, int isCanceled, String courseDescription) {
         this.courseId = courseId;
         this.courseStartDate = courseStartDate;
         this.courseEndDate = courseEndDate;
@@ -36,21 +52,6 @@ public class course {
         this.courseId = courseId;
     }
 
-    public Date getCourseStartDate() {
-        return courseStartDate;
-    }
-
-    public void setCourseStartDate(Date courseStartDate) {
-        this.courseStartDate = courseStartDate;
-    }
-
-    public Date getCourseEndDate() {
-        return courseEndDate;
-    }
-
-    public void setCourseEndDate(Date courseEndDate) {
-        this.courseEndDate = courseEndDate;
-    }
 
     public int getCourseCostHour() {
         return courseCostHour;

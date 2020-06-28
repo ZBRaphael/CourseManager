@@ -4,14 +4,23 @@ public class simplifiedStudent {
     private int stuId;
     private String stuUsername;
     private String stuTell;
-
+    private int isAttend;
     public simplifiedStudent() {
     }
 
-    public simplifiedStudent(int stuId, String stuUsername, String stuTell) {
+    public int getIsAttend() {
+        return isAttend;
+    }
+
+    public void setIsAttend(int isAttend) {
+        this.isAttend = isAttend;
+    }
+
+    public simplifiedStudent(int stuId, String stuUsername, String stuTell, int isAttend) {
         this.stuId = stuId;
         this.stuUsername = stuUsername;
         this.stuTell = stuTell;
+        this.isAttend = isAttend;
     }
 
     public int getStuId() {

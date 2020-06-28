@@ -7,9 +7,10 @@ import com.typhoon.demo.pojo.teacher;
 import java.util.List;
 
 public interface teaService {
-    public teacher login(String stuUsername, String stuPassword);
+    public teacher queryTeaByName(String teaUsername, String teaPassword);
     public boolean addCourse(int teaId, int interest, int courseDate, int courseLocation);
-    public boolean cancelCourse(int teaId, int couseId);
+    public boolean cancelCourse(int courseId);
     public List<course> queryMyCourse(int teaId);
-    public List<simplifiedStudent> queryStudentByCourse(int couseId);
+    public List<simplifiedStudent> queryStudentByCourse(int courseId);
+    public String queryTeaInfo(int stuId);
 }

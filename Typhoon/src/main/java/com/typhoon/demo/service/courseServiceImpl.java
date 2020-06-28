@@ -14,4 +14,9 @@ public class courseServiceImpl implements courseService{
     public course queryCourseById(int courseId) {
         return coursemapper.queryCourseById(courseId);
     }
+
+    @Override
+    public boolean teaAddCourse(String courseStartDate, String courseEndDate, int courseCostHour, String courseLocation, int teaId, String interest, String courseDescription) {
+        return coursemapper.insertCourse(courseStartDate, courseEndDate,courseCostHour,courseLocation,teaId,interest,courseDescription);
+    }
 }
