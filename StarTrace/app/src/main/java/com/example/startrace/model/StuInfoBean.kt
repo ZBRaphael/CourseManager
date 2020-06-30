@@ -9,5 +9,6 @@ data class StuInfoBean(
     val stuRestHour: Int,
     val stuTell: String,
     val stuTotalHour: Int,
-    val stuUsername: String
+    val stuUsername: String,
+    val interest: String
 )

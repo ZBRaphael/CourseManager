@@ -11,8 +11,8 @@ public class URLProviderUtils {
      * @param size   返回数据的条目个数
      * @return url
      */
-//    private static String basepath = "http://192.168.1.100:8081/stu/";
-    private static String basepath = "http://112.124.29.52:8081/stu/";
+    private static String basepath = "http://192.168.1.100:8081/stu/";
+//    private static String basepath = "http://112.124.29.52:8080/stu/";
     /**
      * 登陆
      * @return
@@ -82,6 +82,44 @@ public class URLProviderUtils {
         Log.i("getMyInfo", url);
         return url;
     }
+
+    /**
+     * 首页
+     * @return
+     */
+    public static String getHomeUrl(){
+        String url = basepath+"queryCourseWillAttend";
+        Log.i("queryCourseWillAttend", url);
+        return url;
+    }
+
+    /**
+     * gallery
+     * @return
+     */
+    public static String getGalleryUrl(){
+        String url = basepath+"queryCourseICanChoose";
+        Log.i("queryCourseICanChoose", url);
+        return url;
+    }
+
+    public static String getResultyUrl(){
+        String url = basepath+"queryCourseChoose";
+        Log.i("queryCourseChoose", url);
+        return url;
+    }
+
+    /**
+     * 注册
+     * @return
+     */
+    public static String getRegisterUrl(){
+        String url = basepath+"register";
+        Log.i("register", url);
+        return url;
+    }
+
+
     private static String getSystemVersion() {
         return android.os.Build.VERSION.RELEASE;
     }

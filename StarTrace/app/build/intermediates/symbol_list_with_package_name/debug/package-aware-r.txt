@@ -1323,8 +1323,6 @@ id planets_spinner
 id progress_circular
 id progress_horizontal
 id radio
-id radioButton
-id radioButton2
 id recyclerview
 id recyclerview_gallery
 id refreshLayout
@@ -1334,7 +1332,6 @@ id result
 id right
 id right_icon
 id right_side
-id role
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type

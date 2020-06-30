@@ -50,6 +50,7 @@ class HomeFragment : BaseFragment() {
 
             loadDatas()
         }
+        initData()
 
     }
 
@@ -64,7 +65,7 @@ class HomeFragment : BaseFragment() {
         username = intent?.getStringExtra("username").toString();
         sessionId = intent?.getStringExtra("sessionId").toString();
         println("$username,$sessionId")
-        val path = URLProviderUtils.queryAllCourse()
+        val path = URLProviderUtils.getHomeUrl()
         val builder = FormBody.Builder()
         val formBody = builder.build()
         val mOkHttpClient = OkHttpClient()
@@ -100,16 +101,10 @@ class HomeFragment : BaseFragment() {
                     result,
                     object : TypeToken<List<CourseBean>>() {}.type
                 )
-                val filtedList: List<CourseBean> = list.filter {
-                    it.isCanceledByStu == 0
-                }
 
-                ThreadUtil.runOnMainThread(object : Runnable {
-                    override fun run() {
-                        //刷新列表
-                        adapter.upDataList(filtedList,sessionId)
 
-                    }
+                ThreadUtil.runOnMainThread(Runnable { //刷新列表
+                    adapter.upDataList(list,sessionId)
                 })
             }
         })

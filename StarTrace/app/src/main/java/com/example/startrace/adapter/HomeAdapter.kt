@@ -57,6 +57,8 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
             intent.putExtra("title",data.interest);
             intent.putExtra("des",data.courseDescription);
             intent.putExtra("session",sessionId)
+            Log.v("123",data.courseId.toString())
+            intent.putExtra("courseId",data.courseId.toString())
             it.context.startActivity(intent)
         }
     }

@@ -34,8 +34,9 @@
     <string name="register">Register</string>
     <string name="role">身份：</string>
     <string-array name="planets_array">
-        <item>篮球</item>
-        <item>足球</item>
-        <item>乒乓球</item>
+        <item>篮球课</item>
+        <item>足球课</item>
+        <item>体能班</item>
+        <item>轮滑课</item>
     </string-array>
 </resources>

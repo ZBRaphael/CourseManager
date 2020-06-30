@@ -83,6 +83,7 @@ class UserFragment : BaseFragment() {
                         phone.text = stuInfo.stuTell
                         ll_hours.text = "剩余课时："+stuInfo.stuRestHour.toString()
                         ll_totalhours.text ="已上课总课时："+stuInfo.stuTotalHour.toString()
+                        ll_interesting.text = "专业："+stuInfo.interest
 
                     }
                 })
