@@ -11,8 +11,8 @@ public class URLProviderUtils {
      * @param size   返回数据的条目个数
      * @return url
      */
-//    static String basepath = "http://192.168.1.100:8081/stu/";
-    private static String basepath = "http://112.124.29.52:8081/stu/";
+//    static String basepath = "http://192.168.1.100:8081/tea/";
+    private static String basepath = "http://112.124.29.52:8081/tea/";
     /**
      * 登陆
      * @return
@@ -48,7 +48,7 @@ public class URLProviderUtils {
      * @return url
      */
     public static String addCourse(){
-        String url = basepath+"addCours";
+        String url = basepath+"addCourse";
         Log.i("addCourse", url);
         return url;
     }
@@ -62,24 +62,35 @@ public class URLProviderUtils {
         Log.i("cancelCourse", url);
         return url;
     }
-
-    /**
-     * 签到
-     * @return
-     */
-    public static String sign(){
-        String url = basepath+"sign";
-        Log.i("sign", url);
+    public static String getMyInfo(){
+        String url = basepath+"getMyInfo";
+        Log.i("getMyInfo", url);
         return url;
     }
 
     /**
-     * 获取个人信息
+     * 首页
      * @return
      */
-    public static String getMyInfo(){
-        String url = basepath+"getMyInfo";
-        Log.i("getMyInfo", url);
+    public static String getHomeUrl(){
+        String url = basepath+"queryMyCourse";
+        Log.i("queryMyCourse", url);
+        return url;
+    }
+
+    /**
+     * gallery
+     * @return
+     */
+    public static String getGalleryUrl(){
+        String url = basepath+"queryCourseICanChoose";
+        Log.i("queryCourseICanChoose", url);
+        return url;
+    }
+
+    public static String getResultyUrl(){
+        String url = basepath+"queryCourseChoose";
+        Log.i("queryCourseChoose", url);
         return url;
     }
     private static String getSystemVersion() {

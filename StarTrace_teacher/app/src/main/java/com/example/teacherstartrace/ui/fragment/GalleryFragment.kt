@@ -62,7 +62,7 @@ class GalleryFragment : BaseFragment() {
         username = intent?.getStringExtra("username").toString();
         sessionId = intent?.getStringExtra("sessionId").toString();
         println("$username,$sessionId")
-        val path = URLProviderUtils.queryAllCourse()
+        val path = URLProviderUtils.getGalleryUrl()
         val builder = FormBody.Builder()
         val formBody = builder.build()
         val mOkHttpClient = OkHttpClient()

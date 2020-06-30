@@ -97,7 +97,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="选择时间:"
+                        android:text="选择开始时间:"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -111,7 +111,30 @@
                         android:textSize="18sp" />
 
                 </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_time_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择结束时间:"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#ededed"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/ll_local"
                     android:layout_width="match_parent"

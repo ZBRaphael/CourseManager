@@ -32,7 +32,7 @@ class HomeItemView: RelativeLayout {
         home_card_teacher.text = "老师："+data.interest
         home_card_date.text = "时间："+data.courseDate
         home_card_loacl.text = "地点："+data.courseLocation
-        if(data.isAttend==0){
+        if(data.isAttend==1){
             signin.text = "已签到"
         }
     }

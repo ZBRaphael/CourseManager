@@ -61,7 +61,7 @@ class HomeFragment : BaseFragment() {
         username = intent?.getStringExtra("username").toString();
         sessionId = intent?.getStringExtra("sessionId").toString();
         println("$username,$sessionId")
-        val path = URLProviderUtils.queryAllCourse()
+        val path = URLProviderUtils.getHomeUrl()
         val builder = FormBody.Builder()
         val formBody = builder.build()
         val mOkHttpClient = OkHttpClient()
