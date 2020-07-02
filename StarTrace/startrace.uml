@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.startrace</OriginalElement>
+  <nodes>
+    <node x="1606.0" y="977.0">com.example.startrace.model.Enrollment</node>
+    <node x="2668.0" y="1664.0">com.example.startrace.data.model.LoggedInUser</node>
+    <node x="2180.0" y="2514.0">com.example.startrace.ExampleInstrumentedTest</node>
+    <node x="2424.0" y="435.0">com.example.startrace.ui.activity.SplashActivity</node>
+    <node x="1242.0" y="414.0">com.example.startrace.ui.activity.MainActivity</node>
+    <node x="2077.0" y="2131.0">com.example.startrace.BuildConfig</node>
+    <node x="0.0" y="2131.0">com.example.startrace.model.LoginBean</node>
+    <node x="520.0" y="2131.0">com.example.startrace.data.LoginRepository</node>
+    <node x="2173.0" y="457.0">com.example.startrace.ui.activity.RegisterActivity</node>
+    <node x="1825.0" y="2514.0">com.example.startrace.data.LoginDataSource</node>
+    <node x="292.0" y="2514.0">com.example.startrace.widget.GalleryItemView</node>
+    <node x="1643.0" y="1664.0">com.example.startrace.util.URLProviderUtils</node>
+    <node x="2478.0" y="2514.0">com.example.startrace.ui.login.LoginViewModelFactory</node>
+    <node x="844.0" y="1664.0">com.example.startrace.adapter.ResultAdapter</node>
+    <node x="0.0" y="2723.0">com.example.startrace.data.LoginDataSourceKt</node>
+    <node x="129.75" y="1664.0">com.example.startrace.data.Result</node>
+    <node x="436.0" y="1303.0">com.example.startrace.ui.fragment.UserFragment</node>
+    <node x="0.0" y="0.0">com.example.startrace.model.CourseBean</node>
+    <node x="1445.0" y="2131.0">com.example.startrace.util.SerializableOkHttpCookies</node>
+    <node x="1957.0" y="1343.0">com.example.startrace.util.FragmentUtil.Companion</node>
+    <node x="2320.0" y="2131.0">com.example.startrace.model.GalleryViewModel</node>
+    <node x="439.0" y="1664.0">com.example.startrace.adapter.GalleryAdapter</node>
+    <node x="640.0" y="499.0">com.example.startrace.util.ToolBarManager.DefaultImpls</node>
+    <node x="304.5" y="2367.0">com.example.startrace.base.Session.Companion</node>
+    <node x="2757.0" y="2514.0">com.example.startrace.ExampleUnitTest</node>
+    <node x="1158.0" y="2237.0">com.example.startrace.presenter.interf.HomePresenterImpl</node>
+    <node x="632.0" y="2723.0">com.example.startrace.view.HomeView</node>
+    <node x="735.0" y="977.0">com.example.startrace.model.StudentBean</node>
+    <node x="2612.0" y="2131.0">com.example.startrace.model.SlideshowViewModel</node>
+    <node x="478.0" y="2723.0">com.example.startrace.util.PostUtil</node>
+    <node x="0.0" y="2514.0">com.example.startrace.model.HomeViewModel</node>
+    <node x="941.0" y="1986.0">com.example.startrace.adapter.ResultAdapter.ResultHolder</node>
+    <node x="1342.0" y="1986.0">com.example.startrace.adapter.HomeAdapter.HomeHolder</node>
+    <node x="125.0" y="977.0">com.example.startrace.base.BaseFragment</node>
+    <node x="535.5" y="1986.0">com.example.startrace.adapter.GalleryAdapter.GalleryHolder</node>
+    <node x="1292.0" y="43.0">com.example.startrace.util.ToolBarManager</node>
+    <node x="1784.0" y="2131.0">com.example.startrace.util.ThreadUtil</node>
+    <node x="218.0" y="1281.0">com.example.startrace.ui.fragment.GalleryFragment</node>
+    <node x="1904.0" y="1664.0">com.example.startrace.ui.login.LoginViewModel</node>
+    <node x="1734.0" y="425.0">com.example.startrace.ui.activity.CourseInfoActivity</node>
+    <node x="1345.0" y="2514.0">com.example.startrace.ui.fragment.SettingFragment</node>
+    <node x="997.0000000000001" y="348.0">com.example.startrace.ui.activity.CourseResultActivity</node>
+    <node x="276.0" y="2131.0">com.example.startrace.base.Session</node>
+    <node x="1200.5" y="2131.0">com.example.startrace.presenter.impl.HomePresenter</node>
+    <node x="2673.0" y="489.0">com.example.startrace.ui.activity.AboutActivity</node>
+    <node x="210.0" y="1814.0">com.example.startrace.data.Result.Success</node>
+    <node x="647.0" y="2514.0">com.example.startrace.widget.ResultItemView</node>
+    <node x="2297.0" y="1664.0">com.example.startrace.ui.login.LoginResult</node>
+    <node x="1245.0" y="1664.0">com.example.startrace.adapter.HomeAdapter</node>
+    <node x="1456.0" y="381.0">com.example.startrace.ui.activity.LoginActivity</node>
+    <node x="241.0" y="2723.0">com.example.startrace.widget.LoadMoreView</node>
+    <node x="2702.0" y="977.0">com.example.startrace.ui.login.LoginFormState</node>
+    <node x="875.0" y="2131.0">com.example.startrace.ui.login.LoggedInUserView</node>
+    <node x="1907.125" y="0.0">com.example.startrace.base.BaseActivity</node>
+    <node x="2229.0" y="977.0">com.example.startrace.util.PersistentCookieStore</node>
+    <node x="997.0" y="2514.0">com.example.startrace.widget.HomeItemView</node>
+    <node x="1224.0" y="977.0">com.example.startrace.model.StuInfoBean</node>
+    <node x="0.0" y="1814.0">com.example.startrace.data.Result.Error</node>
+    <node x="0.0" y="1281.0">com.example.startrace.ui.fragment.HomeFragment</node>
+    <node x="1959.0" y="436.0">com.example.startrace.ui.activity.SettingActivity</node>
+    <node x="1932.0" y="977.0">com.example.startrace.util.FragmentUtil</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.startrace.base.Session.Companion" target="com.example.startrace.base.Session">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="com.example.startrace.util.ToolBarManager.DefaultImpls" target="com.example.startrace.util.ToolBarManager">
+      <point x="0.0" y="-40.0" />
+      <point x="808.5" y="268.0" />
+      <point x="1310.916666666667" y="268.0" />
+      <point x="-94.58333333333326" y="61.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.CourseInfoActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="51.25" y="-114.0" />
+      <point x="1887.75" y="328.0" />
+      <point x="1985.0" y="328.0" />
+      <point x="-11.125" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.CourseResultActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="56.25" y="-191.0" />
+      <point x="1165.75" y="298.0" />
+      <point x="1918.25" y="298.0" />
+      <point x="-77.875" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.LoginActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="64.5" y="-158.0" />
+      <point x="1649.5" y="318.0" />
+      <point x="1962.75" y="318.0" />
+      <point x="-33.375" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.fragment.GalleryFragment" target="com.example.startrace.base.BaseFragment">
+      <point x="0.0" y="-169.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.SettingActivity" target="com.example.startrace.util.ToolBarManager">
+      <point x="-48.5" y="-103.0" />
+      <point x="2007.5" y="268.0" />
+      <point x="1500.0833333333335" y="268.0" />
+      <point x="94.58333333333326" y="61.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.fragment.HomeFragment" target="com.example.startrace.base.BaseFragment">
+      <point x="0.0" y="-169.0" />
+      <point x="99.0" y="1256.0" />
+      <point x="189.0" y="1256.0" />
+      <point x="-128.0" y="127.0" />
+    </edge>
+    <edge source="com.example.startrace.adapter.HomeAdapter.HomeHolder" target="com.example.startrace.adapter.HomeAdapter">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.SplashActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="0.0" y="-104.0" />
+      <point x="2538.5" y="238.0" />
+      <point x="2051.75" y="238.0" />
+      <point x="55.625" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.adapter.GalleryAdapter.GalleryHolder" target="com.example.startrace.adapter.GalleryAdapter">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.CourseResultActivity" target="com.example.startrace.util.ToolBarManager">
+      <point x="-56.25" y="-191.0" />
+      <point x="1053.25" y="278.0" />
+      <point x="1348.75" y="278.0" />
+      <point x="-56.75" y="61.0" />
+    </edge>
+    <edge source="com.example.startrace.adapter.ResultAdapter.ResultHolder" target="com.example.startrace.adapter.ResultAdapter">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.CourseInfoActivity" target="com.example.startrace.util.ToolBarManager">
+      <point x="-51.25" y="-114.0" />
+      <point x="1785.25" y="278.0" />
+      <point x="1462.25" y="278.0" />
+      <point x="56.75" y="61.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.LoginActivity" target="com.example.startrace.util.ToolBarManager">
+      <point x="-64.5" y="-158.0" />
+      <point x="1520.5" y="288.0" />
+      <point x="1424.416666666667" y="288.0" />
+      <point x="18.916666666666742" y="61.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.fragment.UserFragment" target="com.example.startrace.base.BaseFragment">
+      <point x="0.0" y="-147.0" />
+      <point x="563.0" y="1256.0" />
+      <point x="445.0" y="1256.0" />
+      <point x="128.0" y="127.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.MainActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="48.5" y="-125.0" />
+      <point x="1387.5" y="308.0" />
+      <point x="1940.5" y="308.0" />
+      <point x="-55.625" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.util.FragmentUtil.Companion" target="com.example.startrace.util.FragmentUtil">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="158.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.RegisterActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="0.0" y="-82.0" />
+      <point x="2288.5" y="248.0" />
+      <point x="2029.5" y="248.0" />
+      <point x="33.375" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.presenter.interf.HomePresenterImpl" target="com.example.startrace.presenter.impl.HomePresenter">
+      <point x="0.0" y="-71.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.AboutActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="0.0" y="-50.0" />
+      <point x="2751.5" y="228.0" />
+      <point x="2074.0" y="228.0" />
+      <point x="77.875" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.SettingActivity" target="com.example.startrace.base.BaseActivity">
+      <point x="48.5" y="-103.0" />
+      <point x="2104.5" y="258.0" />
+      <point x="2007.25" y="258.0" />
+      <point x="11.125" y="104.0" />
+    </edge>
+    <edge source="com.example.startrace.ui.activity.MainActivity" target="com.example.startrace.util.ToolBarManager">
+      <point x="-48.5" y="-125.0" />
+      <point x="1290.5" y="288.0" />
+      <point x="1386.5833333333335" y="288.0" />
+      <point x="-18.916666666666742" y="61.0" />
+    </edge>
+    <edge source="com.example.startrace.data.Result.Error" target="com.example.startrace.data.Result">
+      <point x="47.5" y="-136.0" />
+      <point x="142.5" y="1794.0" />
+      <point x="181.875" y="1794.0" />
+      <point x="-17.375" y="50.0" />
+    </edge>
+    <edge source="com.example.startrace.data.Result.Success" target="com.example.startrace.data.Result">
+      <point x="-46.0" y="-136.0" />
+      <point x="256.0" y="1794.0" />
+      <point x="216.625" y="1794.0" />
+      <point x="17.375" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.21024890492838896" x="2003.8405296242886" y="602.2012362711769" />
+  <SelectedNodes>
+    <node>com.example.startrace.ui.activity.CourseInfoActivity</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
