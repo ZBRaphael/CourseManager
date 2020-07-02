@@ -40,7 +40,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+                android:background="@mipmap/football" />
 
             <TextView
                 android:id="@+id/title"

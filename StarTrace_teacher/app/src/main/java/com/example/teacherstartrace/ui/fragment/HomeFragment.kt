@@ -97,14 +97,11 @@ class HomeFragment : BaseFragment() {
                     result,
                     object : TypeToken<List<CourseBean>>() {}.type
                 )
-                val filtedList: List<CourseBean> = list.filter {
-                    it.isCanceledByStu == 0
-                }
 
                 ThreadUtil.runOnMainThread(object : Runnable {
                     override fun run() {
                         //刷新列表
-                        adapter.upDataList(filtedList,sessionId)
+                        adapter.upDataList(list,sessionId)
 
                     }
                 })

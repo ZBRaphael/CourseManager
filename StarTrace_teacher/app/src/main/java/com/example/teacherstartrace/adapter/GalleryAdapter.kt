@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.teacherstartrace.model.CourseBean
 import com.example.teacherstartrace.ui.activity.CourseInfoActivity
 import com.example.teacherstartrace.widget.GalleryItemView
+import com.example.teacherstartrace.widget.HomeItemView
 import java.io.IOException
 
 /**
@@ -31,7 +32,7 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.GalleryHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): GalleryHolder {
-        return GalleryHolder(GalleryItemView(parent.context))
+        return GalleryHolder(HomeItemView(parent.context))
     }
 
     override fun getItemCount(): Int {
@@ -40,18 +41,19 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.GalleryHolder>() {
 
     override fun onBindViewHolder(holder: GalleryHolder, position: Int) {
         val data = list[position]
-        val itemView = holder.itemView as GalleryItemView
+        val itemView = holder.itemView as HomeItemView
         itemView.setdata(data)
         itemView.setOnClickListener{
             val intent = Intent(it.context,
                 CourseInfoActivity::class.java)
-            intent.putExtra("from","select")
+            intent.putExtra("from","gallery")
             intent.putExtra("time", data.courseDate);
             intent.putExtra("local", data.courseLocation);
             intent.putExtra("cost",data.courseCostHour)
             intent.putExtra("num_stu",data.Enrollments.size);
             intent.putExtra("title",data.interest);
-            intent.putExtra("des",data.courseDescription);
+            intent.putExtra("des",data.courseDescription)
+            intent.putExtra("courseId",data.courseId.toString())
             intent.putExtra("session",sessionId)
             it.context.startActivity(intent)
         }

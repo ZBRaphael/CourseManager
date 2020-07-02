@@ -15,6 +15,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 
 import com.example.teacherstartrace.R
 import com.example.teacherstartrace.base.BaseActivity
@@ -22,17 +23,24 @@ import com.example.teacherstartrace.ui.login.LoggedInUserView
 import com.example.teacherstartrace.ui.login.LoginViewModel
 import com.example.teacherstartrace.ui.login.LoginViewModelFactory
 import com.example.teacherstartrace.util.ThreadUtil
+import com.example.teacherstartrace.util.ToolBarManager
 import com.example.teacherstartrace.util.URLProviderUtils
 import okhttp3.*
 import org.jetbrains.anko.startActivity
 import java.io.IOException
 import java.util.concurrent.ConcurrentHashMap
+import org.jetbrains.anko.find
 
-class LoginActivity : BaseActivity() {
-
+class LoginActivity : BaseActivity(),ToolBarManager {
+    override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     private lateinit var loginViewModel: LoginViewModel
     var sessionId = ""
+    override fun initData() {
+        initSettingToolBar("教练登陆")
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         setContentView(getLayoutId())

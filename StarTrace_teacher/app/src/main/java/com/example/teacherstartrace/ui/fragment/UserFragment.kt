@@ -8,6 +8,7 @@ import android.widget.Button
 import com.example.teacherstartrace.R
 import com.example.teacherstartrace.base.BaseFragment
 import com.example.teacherstartrace.model.StuInfoBean
+import com.example.teacherstartrace.model.TeaInfoBean
 import com.example.teacherstartrace.ui.activity.CourseResultActivity
 import com.example.teacherstartrace.ui.activity.LoginActivity
 import com.example.teacherstartrace.util.ThreadUtil
@@ -46,7 +47,7 @@ class UserFragment : BaseFragment() {
         username = intent?.getStringExtra("username").toString();
         sessionId = intent?.getStringExtra("sessionId").toString();
         println("$username,$sessionId")
-        val path = URLProviderUtils.getMyInfo()
+        val path = URLProviderUtils.getTeacherInfoUrl()
         val builder = FormBody.Builder()
         val formBody = builder.build()
         val mOkHttpClient = OkHttpClient()
@@ -76,18 +77,18 @@ class UserFragment : BaseFragment() {
                 val result = response.body?.string()
                 println(result)
                 val gson = Gson()
-                val stuInfo = gson.fromJson<StuInfoBean>(
+                val teaInfo = gson.fromJson<TeaInfoBean>(
                     result,
-                    object : TypeToken<StuInfoBean>() {}.type
+                    object : TypeToken<TeaInfoBean>() {}.type
                 )
 
                 ThreadUtil.runOnMainThread(object : Runnable {
                     override fun run() {
                         //刷新列表
-                        tea_username.text = stuInfo.stuUsername
-                        ll_interesting.text = stuInfo.stuUsername
-                        phone.text = stuInfo.stuTell
-                        ll_totalhours.text ="已上课总课时："+stuInfo.stuTotalHour.toString()
+                        tea_username.text = teaInfo.teaUsername
+                        ll_interesting.text = ""
+                        phone.text = teaInfo.teaTell
+                        ll_totalhours.text ="已上课总课时："+teaInfo.teaAllClassHour.toString()
 
                     }
                 })

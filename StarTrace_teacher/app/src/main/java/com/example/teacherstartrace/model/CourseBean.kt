@@ -21,5 +21,6 @@ data class CourseBean(
 data class Enrollment(
     val stuId: Int,
     val stuTell: String,
-    val stuUsername: String
+    val stuUsername: String,
+    val isAttend: Int= 0
 )

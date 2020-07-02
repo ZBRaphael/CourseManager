@@ -48,14 +48,21 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
         itemView.setOnClickListener{
             val intent = Intent(it.context,
                 CourseInfoActivity::class.java)
-            intent.putExtra("from", "sigin");
+            intent.putExtra("from", "home");
             intent.putExtra("time", data.courseDate);
             intent.putExtra("local", data.courseLocation);
             intent.putExtra("cost",data.courseCostHour)
             intent.putExtra("num_stu",data.Enrollments.size);
             intent.putExtra("title",data.interest);
             intent.putExtra("des",data.courseDescription);
+            intent.putExtra("courseId",data.courseId.toString())
             intent.putExtra("session",sessionId)
+            var count = 0
+            data.Enrollments.forEach {
+                if(it.isAttend==1)
+                    count += 1
+            }
+            intent.putExtra("num_sign",count)
             it.context.startActivity(intent)
         }
     }

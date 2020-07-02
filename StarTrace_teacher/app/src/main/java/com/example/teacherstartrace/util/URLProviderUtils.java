@@ -73,8 +73,8 @@ public class URLProviderUtils {
      * @return
      */
     public static String getHomeUrl(){
-        String url = basepath+"queryMyCourse";
-        Log.i("queryMyCourse", url);
+        String url = basepath+"queryCourseInFuture";
+        Log.i("queryCoueseInFuture", url);
         return url;
     }
 
@@ -83,14 +83,14 @@ public class URLProviderUtils {
      * @return
      */
     public static String getGalleryUrl(){
-        String url = basepath+"queryCourseICanChoose";
-        Log.i("queryCourseICanChoose", url);
+        String url = basepath+"queryCourseInPast";
+        Log.i("queryCoueseInPast", url);
         return url;
     }
 
-    public static String getResultyUrl(){
-        String url = basepath+"queryCourseChoose";
-        Log.i("queryCourseChoose", url);
+    public static String getTeacherInfoUrl(){
+        String url = basepath+"queryMyInfo";
+        Log.i("queryMyInfo", url);
         return url;
     }
     private static String getSystemVersion() {

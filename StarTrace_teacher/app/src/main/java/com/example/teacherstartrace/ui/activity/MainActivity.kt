@@ -18,6 +18,8 @@ import kotlinx.android.synthetic.main.content_main.*
 import org.jetbrains.anko.find
 
 class MainActivity : BaseActivity(), ToolBarManager {
+    var username = ""
+    var sessionId = ""
 
     override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     override fun initData() {
@@ -26,11 +28,15 @@ class MainActivity : BaseActivity(), ToolBarManager {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        username = intent?.getStringExtra("username").toString();
+        sessionId = intent?.getStringExtra("sessionId").toString();
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener {
             val intent = Intent(this,
                 AddActivity::class.java)
+            intent.putExtra("username", username);
+            intent.putExtra("sessionId",sessionId);
             startActivity(intent)
 
         }

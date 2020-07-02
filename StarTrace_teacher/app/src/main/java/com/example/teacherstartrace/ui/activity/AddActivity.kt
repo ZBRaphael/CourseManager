@@ -2,6 +2,7 @@ package com.example.teacherstartrace.ui.activity
 
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.util.Log
@@ -22,6 +23,7 @@ import okhttp3.*
 import org.jetbrains.anko.find
 import java.io.IOException
 import java.util.concurrent.ConcurrentHashMap
+import kotlin.math.min
 
 class AddActivity() : BaseActivity(), View.OnClickListener,
     DatePicker.OnDateChangedListener, OnTimeChangedListener, ToolBarManager {
@@ -163,7 +165,13 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
 
             }
         })
-        startActivityAndFinish<LoginActivity>()
+        val intent = Intent(
+            this,
+            MainActivity::class.java
+        )
+        intent.putExtra("username", username);
+        intent.putExtra("sessionId",sessionId);
+        startActivity(intent)
     }
 
     override fun getLayoutId(): Int {
@@ -193,9 +201,10 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
         year = calendar[Calendar.YEAR]
         month = calendar[Calendar.MONTH] + 1
         day = calendar[Calendar.DAY_OF_MONTH]
-        hour = calendar[Calendar.HOUR]
+        hour = calendar[Calendar.HOUR_OF_DAY]
         minute = calendar[Calendar.MINUTE]
     }
+    val to2Digits: (Int) -> String = { String.format("%02d", it) }
 
     override fun onClick(v: View) {
         when (v.id) {
@@ -209,8 +218,8 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
                         date!!.delete(0, date!!.length)
                     }
                     tvDate!!.text =
-                        date!!.append(year.toString()).append("-").append(month.toString())
-                            .append("-").append(day)
+                        date!!.append(year).append("-").append(to2Digits(month))
+                            .append("-").append(to2Digits(day))
                     dialog.dismiss()
                 }
                 builder.setNegativeButton(
@@ -237,7 +246,7 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
                         time!!.delete(0, time!!.length)
                     }
                     tvTime!!.text =
-                        time!!.append(hour.toString()).append(":").append(minute.toString()).append(":00")
+                        time!!.append(to2Digits(hour)).append(":").append(to2Digits(minute)).append(":00")
                     dialog.dismiss()
                 }
                 builder2.setNegativeButton(
@@ -266,7 +275,7 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
                         time!!.delete(0, time!!.length)
                     }
                     tvTime_end!!.text =
-                        time!!.append(hour.toString()).append(":").append(minute.toString()).append(":00")
+                        time!!.append(String.format("%02d",hour)).append(":").append(String.format("%02d",minute)).append(":00")
                     dialog.dismiss()
                 }
                 builder2.setNegativeButton(

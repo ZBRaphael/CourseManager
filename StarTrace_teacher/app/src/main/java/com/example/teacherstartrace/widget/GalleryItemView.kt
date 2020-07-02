@@ -28,7 +28,7 @@ class GalleryItemView: RelativeLayout {
      */
     fun setdata(data: CourseBean){
         title.text = data.interest
-        home_card_teacher.text = "老师："+data.interest
+        home_card_teacher.text = "课时："+data.courseCostHour
         home_card_date.text = "时间："+data.courseDate
         home_card_loacl.text = "地点："+data.courseLocation
         if(data.isAttend==0){
