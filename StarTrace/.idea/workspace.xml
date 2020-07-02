@@ -11,7 +11,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="303b7694-ce7a-4bf0-b08d-95f75d926315" name="Default Changelist" comment="加入session，获取学生课表">
+    <list default="true" id="303b7694-ce7a-4bf0-b08d-95f75d926315" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/basketball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/football.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/lunhua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/tineng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/model/TeaInfoBean.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/mipmap-xxhdpi/basketball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/mipmap-xxhdpi/football.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/mipmap-xxhdpi/lunhua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/mipmap-xxhdpi/tineng.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -23,26 +32,29 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/out/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/startrace/util/URLProviderUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/startrace/util/URLProviderUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/adapter/HomeAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/adapter/HomeAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/LoginActivity$onCreate$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/LoginActivity$onCreate$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/LoginActivity$onCreate$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/LoginActivity$onCreate$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/LoginActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/LoginActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/MainActivity$initListener$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/MainActivity$initListener$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/MainActivity$toolbar$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/MainActivity$toolbar$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/MainActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/SettingActivity$toolbar$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/activity/SettingActivity$toolbar$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/fragment/GalleryFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/fragment/GalleryFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/fragment/HomeFragment$loadDatas$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/fragment/HomeFragment$loadDatas$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/fragment/HomeFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/ui/fragment/HomeFragment.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/util/FragmentUtil.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/util/FragmentUtil.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/util/URLProviderUtils.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/util/URLProviderUtils.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/widget/HomeItemView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/startrace/widget/HomeItemView.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_item_home.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_item_home.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
@@ -53,7 +65,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
@@ -81,29 +92,30 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/adapter/HomeAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/adapter/HomeAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/LoginActivity$onCreate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/LoginActivity$onCreate$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/LoginActivity$onCreate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/LoginActivity$onCreate$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/LoginActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/LoginActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/MainActivity$initListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/MainActivity$initListener$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/MainActivity$toolbar$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/MainActivity$toolbar$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/MainActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/SettingActivity$toolbar$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/activity/SettingActivity$toolbar$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/fragment/GalleryFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/fragment/GalleryFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/fragment/HomeFragment$loadDatas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/fragment/HomeFragment$loadDatas$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/fragment/HomeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/ui/fragment/HomeFragment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/util/FragmentUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/util/FragmentUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/widget/HomeItemView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/startrace/widget/HomeItemView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/adapter/GalleryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/adapter/GalleryAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/adapter/HomeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/adapter/HomeAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/model/StuInfoBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/model/StuInfoBean.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/adapter/ResultAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/adapter/ResultAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/model/CourseBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/model/CourseBean.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/CourseInfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/CourseInfoActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/CourseResultActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/CourseResultActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/RegisterActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/fragment/GalleryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/fragment/GalleryFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/fragment/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/fragment/UserFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/fragment/UserFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/util/URLProviderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/util/URLProviderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/widget/GalleryItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/widget/GalleryItemView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/widget/HomeItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/widget/HomeItemView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/widget/ResultItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/startrace/widget/ResultItemView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_result.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -115,13 +127,22 @@
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/adapter/GalleryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/adapter/GalleryAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/adapter/HomeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/adapter/HomeAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/model/CourseBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/model/CourseBean.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/AddActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/AddActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/CourseInfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/CourseInfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/activity/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/fragment/GalleryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/fragment/GalleryFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/fragment/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/fragment/UserFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/ui/fragment/UserFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/util/URLProviderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/util/URLProviderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/widget/GalleryItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/widget/GalleryItemView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/widget/HomeItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/widget/HomeItemView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/layout/activity_addcourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/layout/activity_addcourse.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/widget/ResultItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/java/com/example/teacherstartrace/widget/ResultItemView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/layout/activity_courseinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/layout/activity_courseinfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/layout/item_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StarTrace_teacher/app/src/main/res/layout/item_home.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +214,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -205,24 +226,25 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="com.example.startrace.ui.activity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.example.startrace.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
       <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi" />
-      <recent name="$PROJECT_DIR$/app/src/main/res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.startrace.util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/startrace/ui/activity" />
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.example.startrace.ui.activity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -413,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593353073832</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新了接口，修改bug">
+      <created>1593493339127</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593493339127</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,6 +518,8 @@
     <MESSAGE value="更新了result的itemview" />
     <MESSAGE value="将登陆弹窗放入主线程" />
     <MESSAGE value="更新选课和历史记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新选课和历史记录" />
+    <MESSAGE value="更新了接口，修改bug" />
+    <MESSAGE value="更新接口，课程信息中的老师替换为课时" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新接口，课程信息中的老师替换为课时" />
   </component>
 </project>

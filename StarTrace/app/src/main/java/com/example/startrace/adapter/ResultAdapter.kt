@@ -29,7 +29,7 @@ class ResultAdapter: RecyclerView.Adapter<ResultAdapter.ResultHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ResultHolder {
 
-        return ResultHolder(ResultItemView(parent.context))
+        return ResultHolder(HomeItemView(parent.context))
     }
 
     override fun getItemCount(): Int {
@@ -39,7 +39,7 @@ class ResultAdapter: RecyclerView.Adapter<ResultAdapter.ResultHolder>() {
 
     override fun onBindViewHolder(holder: ResultHolder, position: Int) {
         val data = list[position]
-        val itemView = holder.itemView as ResultItemView
+        val itemView = holder.itemView as HomeItemView
         itemView.setdata(data)
         itemView.setOnClickListener{
             val intent = Intent(it.context,
@@ -52,6 +52,12 @@ class ResultAdapter: RecyclerView.Adapter<ResultAdapter.ResultHolder>() {
             intent.putExtra("title",data.interest);
             intent.putExtra("des",data.courseDescription);
             intent.putExtra("session",sessionId)
+            var count = 0
+            data.Enrollments.forEach {
+                if(it.isAttend==1)
+                    count += 1
+            }
+            intent.putExtra("num_sign",count)
             it.context.startActivity(intent)
         }
     }

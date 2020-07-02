@@ -28,29 +28,35 @@ import java.util.concurrent.ConcurrentHashMap
  * Created bu ZhangBo at 2020/6/20
  * Describe:
  **/
-class CourseInfoActivity() :BaseActivity(), ToolBarManager {
+class CourseInfoActivity() : BaseActivity(), ToolBarManager {
     override fun getLayoutId(): Int {
         return R.layout.activity_courseinfo
     }
+
     override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     override fun initData() {
         initSettingToolBar("课程详细信息")
         val sp = PreferenceManager.getDefaultSharedPreferences(this)
-        sp.getBoolean("push",false)
+        sp.getBoolean("push", false)
 
     }
+
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val btn:Button = findViewById<Button>(R.id.home_info_login)
-        val btn_cancel:Button = findViewById<Button>(R.id.home_info_cancel)
-        when(intent.getStringExtra("from")){
-            "sigin"->{
+        val btn: Button = findViewById<Button>(R.id.home_info_login)
+        val btn_cancel: Button = findViewById<Button>(R.id.home_info_cancel)
+        when (intent.getStringExtra("from")) {
+            "sigin" -> {
+                if (intent.getIntExtra("attend", 0) == 1) {
+                    btn_cancel.visibility = View.INVISIBLE
+                    btn.visibility = View.INVISIBLE
+                }
                 btn.text = "签到"
-                btn.setOnClickListener{
+                btn.setOnClickListener {
                     val path = URLProviderUtils.sign()
                     val builder = FormBody.Builder()
-                    builder.add("courseId",intent.getStringExtra("courseId"))
+                    builder.add("courseId", intent.getStringExtra("courseId"))
                     val formBody = builder.build()
 
                     val mOkHttpClient = OkHttpClient()
@@ -80,7 +86,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                             Log.v("http", "获取数据成功：" + Thread.currentThread().name)
                             val result = response.body?.string()
                             Log.v("http", result)
-                            if(result == "success"){
+                            if (result == "success") {
                                 ThreadUtil.runOnMainThread(object : Runnable {
                                     override fun run() {
                                         //刷新列表
@@ -88,8 +94,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
 
                                     }
                                 })
-                            }
-                            else{
+                            } else {
                                 ThreadUtil.runOnMainThread(object : Runnable {
                                     override fun run() {
                                         //刷新列表
@@ -104,10 +109,10 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                     })
 
                 }
-                btn_cancel.setOnClickListener{
+                btn_cancel.setOnClickListener {
                     val path = URLProviderUtils.cancelCourse()
                     val builder = FormBody.Builder()
-                    builder.add("courseId",intent.getStringExtra("courseId"))
+                    builder.add("courseId", intent.getStringExtra("courseId"))
                     val formBody = builder.build()
 
                     val mOkHttpClient = OkHttpClient()
@@ -136,7 +141,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                             Log.v("http", "获取数据成功：" + Thread.currentThread().name)
                             val result = response.body?.string()
                             Log.v("http", result)
-                            if(result == "success"){
+                            if (result == "success") {
                                 ThreadUtil.runOnMainThread(object : Runnable {
                                     override fun run() {
                                         //刷新列表
@@ -144,8 +149,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
 
                                     }
                                 })
-                            }
-                            else{
+                            } else {
                                 ThreadUtil.runOnMainThread(object : Runnable {
                                     override fun run() {
                                         //刷新列表
@@ -160,12 +164,12 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                     })
                 }
             }
-            "select"->{
+            "select" -> {
                 btn.text = "选课"
-                btn.setOnClickListener{
+                btn.setOnClickListener {
                     val path = URLProviderUtils.addCourse()
                     val builder = FormBody.Builder()
-                    builder.add("courseId",intent.getStringExtra("courseId"))
+                    builder.add("courseId", intent.getStringExtra("courseId"))
                     val formBody = builder.build()
 
                     val mOkHttpClient = OkHttpClient()
@@ -195,7 +199,7 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                             Log.v("http", "获取数据成功：" + Thread.currentThread().name)
                             val result = response.body?.string()
                             Log.v("http", result)
-                            if(result == "success"){
+                            if (result == "success") {
                                 ThreadUtil.runOnMainThread(object : Runnable {
                                     override fun run() {
                                         //刷新列表
@@ -203,12 +207,11 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
 
                                     }
                                 })
-                            }
-                            else{
+                            } else {
                                 ThreadUtil.runOnMainThread(object : Runnable {
                                     override fun run() {
                                         //刷新列表
-                                        myToast("签到失败")
+                                        myToast("选课失败")
 
                                     }
                                 })
@@ -220,16 +223,20 @@ class CourseInfoActivity() :BaseActivity(), ToolBarManager {
                 }
                 btn_cancel.visibility = View.INVISIBLE
             }
-            "result"->{
+            "result" -> {
                 btn.visibility = View.INVISIBLE
                 btn_cancel.visibility = View.INVISIBLE
             }
         }
         home_info_title.text = intent.getStringExtra("title")
-        home_info_time.text = "时间："+intent.getStringExtra("time")
-        home_info_local.text = "地点："+intent.getStringExtra("local")
-        home_info_hours.text = "时长："+intent.getIntExtra("cost",0)
-        home_info_num.text = "已签到人数："+intent.getIntExtra("num_stu",0)
+        home_info_time.text = "时间：" + intent.getStringExtra("time")
+        home_info_local.text = "地点：" + intent.getStringExtra("local")
+        home_info_hours.text = "时长：" + intent.getIntExtra("cost", 0)
+        home_info_num.text =
+            "已签到人数/已选课人数：" + intent.getIntExtra("num_sign", 0) + "/" + intent.getIntExtra(
+                "num_stu",
+                0
+            )
         tv_des.text = intent.getStringExtra("des")
 
     }

@@ -34,11 +34,15 @@ class GalleryItemView: RelativeLayout {
      */
     fun setdata(data: CourseBean){
         title.text = data.interest
-        home_card_teacher.text = "老师："+data.interest
+        home_card_teacher.text = "课时："+data.courseCostHour
         home_card_date.text = "时间："+data.courseDate
         home_card_loacl.text = "地点："+data.courseLocation
-        if(data.isAttend==0){
-            signin.text = "已签到"
+        signin.text = ""
+        when(data.interest){
+            "篮球课"-> bg_home.setImageResource(R.drawable.basketball)
+            "足球课"-> bg_home.setImageResource(R.drawable.football)
+            "体能课"-> bg_home.setImageResource(R.drawable.tineng)
+            "轮滑课"-> bg_home.setImageResource(R.drawable.lunhua)
         }
     }
 }

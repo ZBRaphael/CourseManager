@@ -6,20 +6,26 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 
 import com.example.startrace.R
 import com.example.startrace.base.BaseActivity
 import com.example.startrace.ui.login.LoginViewModel
 import com.example.startrace.util.ThreadUtil
+import com.example.startrace.util.ToolBarManager
 import com.example.startrace.util.URLProviderUtils
 import okhttp3.*
+import org.jetbrains.anko.find
 import java.io.IOException
 import java.util.concurrent.ConcurrentHashMap
 
-class LoginActivity : BaseActivity() {
-
+class LoginActivity : BaseActivity(),ToolBarManager {
+    override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
     private lateinit var loginViewModel: LoginViewModel
     var sessionId = ""
+    override fun initData() {
+        initSettingToolBar("学生登陆")
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

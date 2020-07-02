@@ -18,11 +18,13 @@ data class CourseBean(
     val courseLocation: String,
     val interest: String,
     val isAttend: Int,
-    val isCanceledByStu: Int
+    val isCanceledByStu: Int,
+    val isSign:Int = 0
 )
 
 data class Enrollment(
     val stuId: Int,
     val stuTell: String,
-    val stuUsername: String
+    val stuUsername: String,
+    val isAttend:Int
 )

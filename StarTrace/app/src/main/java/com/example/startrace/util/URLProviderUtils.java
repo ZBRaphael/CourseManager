@@ -11,8 +11,8 @@ public class URLProviderUtils {
      * @param size   返回数据的条目个数
      * @return url
      */
-    private static String basepath = "http://192.168.1.100:8081/stu/";
-//    private static String basepath = "http://112.124.29.52:8080/stu/";
+//    private static String basepath = "http://192.168.1.100:8081/stu/";
+    private static String basepath = "http://112.124.29.52:8081/stu/";
     /**
      * 登陆
      * @return
@@ -48,7 +48,7 @@ public class URLProviderUtils {
      * @return url
      */
     public static String addCourse(){
-        String url = basepath+"addCours";
+        String url = basepath+"addCourse";
         Log.i("addCourse", url);
         return url;
     }

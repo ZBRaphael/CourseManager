@@ -57,9 +57,17 @@ class HomeAdapter:RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
             intent.putExtra("title",data.interest);
             intent.putExtra("des",data.courseDescription);
             intent.putExtra("session",sessionId)
+            intent.putExtra("attend",data.isAttend)
             Log.v("123",data.courseId.toString())
             intent.putExtra("courseId",data.courseId.toString())
+            var count = 0
+            data.Enrollments.forEach {
+                if(it.isAttend==1)
+                    count += 1
+            }
+            intent.putExtra("num_sign",count)
             it.context.startActivity(intent)
+
         }
     }
 

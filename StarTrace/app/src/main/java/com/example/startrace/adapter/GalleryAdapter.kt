@@ -34,7 +34,7 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.GalleryHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): GalleryHolder {
-        return GalleryHolder(HomeItemView(parent.context))
+        return GalleryHolder(GalleryItemView(parent.context))
     }
 
     override fun getItemCount(): Int {
@@ -44,7 +44,7 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.GalleryHolder>() {
 
     override fun onBindViewHolder(holder: GalleryHolder, position: Int) {
         val data = list[position]
-        val itemView = holder.itemView as HomeItemView
+        val itemView = holder.itemView as GalleryItemView
         itemView.setdata(data)
         itemView.setOnClickListener{
             val intent = Intent(it.context,
@@ -57,6 +57,13 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.GalleryHolder>() {
             intent.putExtra("title",data.interest);
             intent.putExtra("des",data.courseDescription);
             intent.putExtra("session",sessionId)
+            intent.putExtra("courseId",data.courseId.toString())
+            var count = 0
+            data.Enrollments.forEach {
+                if(it.isAttend==1)
+                    count += 1
+            }
+            intent.putExtra("num_sign",count)
             it.context.startActivity(intent)
         }
     }

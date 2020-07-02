@@ -1069,6 +1069,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable basketball
 drawable bb_bottom_bar_top_shadow
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1087,6 +1088,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable football
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_camera
@@ -1098,6 +1100,7 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable lunhua
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1114,6 +1117,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable splash_bg
+drawable tineng
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user_center_default_avatar
@@ -1198,6 +1202,7 @@ id bb_bottom_bar_shadow
 id bb_bottom_bar_title
 id beginning
 id bg
+id bg_home
 id blocking
 id bottom
 id bottomBar
