@@ -199,7 +199,7 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
     private fun initDateTime() {
         val calendar = Calendar.getInstance()
         year = calendar[Calendar.YEAR]
-        month = calendar[Calendar.MONTH] + 1
+        month = calendar[Calendar.MONTH]
         day = calendar[Calendar.DAY_OF_MONTH]
         hour = calendar[Calendar.HOUR_OF_DAY]
         minute = calendar[Calendar.MINUTE]
@@ -218,7 +218,7 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
                         date!!.delete(0, date!!.length)
                     }
                     tvDate!!.text =
-                        date!!.append(year).append("-").append(to2Digits(month))
+                        date!!.append(year).append("-").append(to2Digits(month+1))
                             .append("-").append(to2Digits(day))
                     dialog.dismiss()
                 }
@@ -234,7 +234,7 @@ class AddActivity() : BaseActivity(), View.OnClickListener,
                 dialog.setView(dialogView)
                 dialog.show()
                 //初始化日期监听事件
-                datePicker.init(year, month - 1, day, this)
+                datePicker.init(year, month, day, this)
             }
             R.id.ll_time -> {
                 val builder2 =
