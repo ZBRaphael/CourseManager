@@ -12,7 +12,7 @@ import java.util.List;
 @Mapper
 public interface studentMapper {
     //注册
-    @Insert("insert into STUDENT(stuUsername, stuPassword, interest, stuTell) values(#{username}, #{password}, #{interest}, #{stuTell})")
+    @Insert("insert into STUDENT(stuUsername, stuPassword, interest, stuTell) values(#{stuUsername}, #{stuPassword}, #{interest}, #{stuTell})")
     boolean insertStu(@Param("stuUsername") String stuUsername, @Param("stuPassword") String stuPassword, @Param("interest") String interest, @Param("stuTell") String stuTell);
     //登录
     @Select("select * from STUDENT where stuUsername = #{stuUsername}")
@@ -42,8 +42,8 @@ public interface studentMapper {
     String queryMyInterest(int stuId);
 
     //取消某次课程
-    @Update("update STUDENT set stuRemainingClassHour = #{courseId} + stuRemainingClassHour where stuId = #{stuId}")
-    boolean stuCancelCourseReturnCost(@Param("stuRemainingClassHour")int courseCostHour, @Param("stuId")int stuId);
+    @Update("update STUDENT set stuRemainingClassHour = #{courseCostHour} + stuRemainingClassHour where stuId = #{stuId}")
+    boolean stuCancelCourseReturnCost(@Param("courseCostHour")int courseCostHour, @Param("stuId")int stuId);
     @Update("update ATTENDCLASS set isCanceledByStu = 1 where stuId = #{stuId} and courseId = #{courseId}")
     boolean stuCancelCourse(@Param("stuId") int stuId, @Param("courseId") int courseId);
 

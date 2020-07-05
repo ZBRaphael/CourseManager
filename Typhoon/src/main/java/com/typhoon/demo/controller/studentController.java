@@ -34,26 +34,57 @@ public class studentController {
     @Autowired
     private courseServiceImpl courseServiceimpl;
     @RequestMapping("/stu/test")
-    public String test() {
-        List<course> relatedCourse = stuServiceimpl.stuQueryRelatedCourse("basketball");
-        System.out.println("相关的课" + relatedCourse.size());
-        relatedCourse = stuServiceimpl.stuQueryRelatedCourse("篮球课");
-        System.out.println("相关的课" + relatedCourse.size());
-        return "hehe";
+    public List<JSONObject> test() {
+        int stuId = 2;
+        //当前时间之后查询自己参加的课
+        List<JSONObject> ret = new ArrayList<>();
+        List<attendclass> attendCourse = stuServiceimpl.stuQueryCourseAttend(stuId);
+        //已选课程id集合
+        HashSet<Integer> record = new HashSet<>();
+        for(attendclass temp : attendCourse) {
+            record.add(temp.getCourseId());
+        }
+        // 查询兴趣相关的课
+        String interest = stuServiceimpl.stuQueryInterest(stuId);
+        List<course> relatedCourse = stuServiceimpl.stuQueryRelatedCourse(interest);
+        for(course temp : relatedCourse){
+            //排除选过的
+            if(record.contains(temp.getCourseId()))
+                continue;
+            //排除老师取消的
+            if(temp.getIsCanceled() == 1)
+                continue;
+            //排除日期在当前之后
+            if(!compareDate(temp.getCourseStartDate())) //应该返回的课程
+                continue;
+            JSONObject one = new JSONObject();
+            one.put("courseId",temp.getCourseId());
+            one.put("interest",interest);
+            one.put("courseCostHour", temp.getCourseCostHour());
+            one.put("courseDate",temp.getCourseStartDate());
+            one.put("courseLocation", temp.getCourseLocation());
+            // 查询上了这门课的学生
+            List<simplifiedStudent> students = teaServiceimpl.queryStudentByCourse(temp.getCourseId());
+            one.put("Enrollments", students);
+            one.put("courseDescription", temp.getCourseDescription());
+            ret.add(one);
+        }
+        return ret;
     }
 
     //注册
     @RequestMapping("stu/register")
     public String register(@RequestBody String string_data, HttpServletRequest request, HttpServletResponse response){
         boolean ret = false;
+        System.out.println(string_data);
         JSONObject json = Process_data(string_data);
         String username = json.get("stuUsername").toString();
         String password = json.get("stuPassword").toString();
         String interest = json.get("interest").toString();
         String tell = json.get("stuTell").toString();
         ret = stuServiceimpl.register(username, password, interest, tell);
-        response.setHeader("Access-Control-Allow-Origin","http://localhost:8080");
-        response.setHeader("Access-Control-Allow-Credentials", "true");
+        //response.setHeader("Access-Control-Allow-Origin","http://localhost:8080");
+        //response.setHeader("Access-Control-Allow-Credentials", "true");
         if(ret)
             return "success";
         return "failure";
@@ -81,6 +112,7 @@ public class studentController {
         }
         //System.out.println(request.getHeader("origin"));
         response.setHeader("Access-Control-Allow-Origin","http://localhost:8080");
+        //response.setHeader("Access-Control-Allow-Origin","http://112.124.29.52:8080");
         response.setHeader("Access-Control-Allow-Credentials", "true");
         if(ret)
             return "success";
@@ -119,6 +151,7 @@ public class studentController {
                 one.put("courseDate",temp.getCourseDate());
                 one.put("courseLocation", temp.getCourseLocation());
                 one.put("isCanceledByStu", String.valueOf(temp.getIsCanceledByStu()));
+                one.put("isCanceledByTea", String.valueOf(tempcourse.getIsCanceled()));
                 one.put("isAttend", String.valueOf(temp.getIsAttend()));
                 // 查询上了这门课的学生
                 List<simplifiedStudent> students = teaServiceimpl.queryStudentByCourse(temp.getCourseId());
@@ -143,6 +176,7 @@ public class studentController {
                 one.put("courseDate",temp.getCourseStartDate());
                 one.put("courseLocation", temp.getCourseLocation());
                 one.put("isCanceledByStu", "1");
+                one.put("isCanceledByTea", String.valueOf(temp.getIsCanceled()));
                 one.put("isAttend", "0");
                 // 查询上了这门课的学生
                 List<simplifiedStudent> students = teaServiceimpl.queryStudentByCourse(temp.getCourseId());
@@ -173,6 +207,7 @@ public class studentController {
             //System.out.println(stuId);
             ret.put("stuUsername", targetStudent.getStuUsername());
             ret.put("stuTell", targetStudent.getStuTell());
+            ret.put("interest", targetStudent.getInterest());
             ret.put("stuTotalHour", targetStudent.getStuTotalClassHour());
             ret.put("stuRestHour", targetStudent.getStuRemainingClassHour());
         }
@@ -229,13 +264,16 @@ public class studentController {
             String interest = stuServiceimpl.stuQueryInterest(stuId);
             //
             for(attendclass temp : attendCourse) {
-                if(!compareDate(temp.getCourseDate())){//应该返回的课程
+                if(!compareDate(temp.getCourseDate())){ //应该返回的课程
+                    continue;
+                }
+                course tempcourse = courseServiceimpl.queryCourseById(temp.getCourseId());
+                if(tempcourse.getIsCanceled() == 1){
                     continue;
                 }
                 JSONObject one = new JSONObject();
                 one.put("attendClassId",temp.getAttendClassId());
                 one.put("courseId",temp.getCourseId());
-                course tempcourse = courseServiceimpl.queryCourseById(temp.getCourseId());
                 one.put("interest",interest);
                 one.put("courseCostHour", tempcourse.getCourseCostHour());
                 one.put("courseDate",temp.getCourseDate());
@@ -286,6 +324,54 @@ public class studentController {
                 List<simplifiedStudent> students = teaServiceimpl.queryStudentByCourse(temp.getCourseId());
                 one.put("Enrollments", students);
                 one.put("courseDescription", tempcourse.getCourseDescription());
+                ret.add(one);
+            }
+
+        }
+        response.setHeader("Access-Control-Allow-Origin","http://localhost:8080");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
+        System.out.println(ret.size());
+        return ret;
+    }
+
+    // 安卓端特供，查询上课时间在今天以后，老师没有取消，自己没有选
+    @RequestMapping("stu/queryCourseICanChoose")
+    public List<JSONObject> queryCourseICanChoose(HttpServletRequest request, HttpServletResponse response){
+        List<JSONObject> ret = new ArrayList<>();
+        if(request.getSession().getAttribute("stuId") == null) //未登录，重定向
+            return ret;
+        else {
+            int stuId = Integer.parseInt(request.getSession().getAttribute("stuId").toString());
+            //当前时间之后查询自己参加的课
+            List<attendclass> attendCourse = stuServiceimpl.stuQueryCourseAttend(stuId);
+            //已选课程id集合
+            HashSet<Integer> record = new HashSet<>();
+            for(attendclass temp : attendCourse) {
+                record.add(temp.getCourseId());
+            }
+            // 查询兴趣相关的课
+            String interest = stuServiceimpl.stuQueryInterest(stuId);
+            List<course> relatedCourse = stuServiceimpl.stuQueryRelatedCourse(interest);
+            for(course temp : relatedCourse){
+                //排除选过的
+                if(record.contains(temp.getCourseId()))
+                    continue;
+                //排除老师取消的
+                if(temp.getIsCanceled() == 1)
+                    continue;
+                //排除日期在当前之后
+                if(!compareDate(temp.getCourseStartDate())) //应该返回的课程
+                    continue;
+                JSONObject one = new JSONObject();
+                one.put("courseId",temp.getCourseId());
+                one.put("interest",interest);
+                one.put("courseCostHour", temp.getCourseCostHour());
+                one.put("courseDate",temp.getCourseStartDate());
+                one.put("courseLocation", temp.getCourseLocation());
+                // 查询上了这门课的学生
+                List<simplifiedStudent> students = teaServiceimpl.queryStudentByCourse(temp.getCourseId());
+                one.put("Enrollments", students);
+                one.put("courseDescription", temp.getCourseDescription());
                 ret.add(one);
             }
 
@@ -364,6 +450,7 @@ public class studentController {
         boolean res = stuServiceimpl.stuCancelCourse(courseId, stuId);
         response.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
         response.setHeader("Access-Control-Allow-Credentials", "true");
+        System.out.println("用户" + stuId + "取消了课程");
         if (res)
             return "success";
         return "failure";
