@@ -1,0 +1,4 @@
+#Sat Jul 04 00:04:28 CST 2020
+base.0=/Users/zhangbo/Documents/GitHub/CourseManager/StarTrace_teacher/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
