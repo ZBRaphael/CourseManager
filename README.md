@@ -1,1 +1,1 @@
-# CourseManager
+# StarTrace Version 1.0.0
