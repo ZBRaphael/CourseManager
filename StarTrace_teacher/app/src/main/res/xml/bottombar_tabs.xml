@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/tab_home"
+            icon="@drawable/ic_menu_camera"
+            title="待上课程" />
+        <tab
+            id="@+id/tab_gallery"
+            icon="@drawable/ic_menu_gallery"
+            title="全部课程" />
+        <tab
+            id="@+id/tab_slideshow"
+            icon="@drawable/ic_menu_slideshow"
+            title="我的" />
+    </tabs>
+</PreferenceScreen>
