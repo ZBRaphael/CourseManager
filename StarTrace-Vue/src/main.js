@@ -10,8 +10,9 @@ import router from './router'
 import '../static/css/style.css'
 Vue.use(ElementUI)
 Vue.use(Vueaxios,axios)
-
-Vue.config.productionTip = false
+//与后端进行数据交换的时候带上cookie
+axios.defaults.withCredentials = true;
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
@@ -19,8 +20,7 @@ new Vue({
   router,
   data : function () {
     return {
-      role : -1,
-      username : '',
+      levelid : 3,
     }
   },
   components: { App },

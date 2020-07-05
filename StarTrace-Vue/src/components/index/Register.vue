@@ -10,27 +10,10 @@
           </el-divider>
           <el-form ref="selectForm" :model="selectForm" label-width="130px" :rules="rules">
             <el-form-item label="用户名" prop="stuUsername">
-              <!--<el-select v-model="selectForm.students" filterable placeholder="少侠如何称呼?">-->
-                <!--<el-option-->
-                  <!--v-for="item in students"-->
-                  <!--:key="item.Id"-->
-                  <!--:label="item.Name"-->
-                  <!--:value="item.Id"-->
-                <!--&gt;</el-option>-->
-              <!--</el-select>-->
               <el-input type="text" v-model="selectForm.stuUsername" placeholder="" style="width: 188px"></el-input>
             </el-form-item>
-            <!--<el-divider content-position="center">欲上青天揽明月</el-divider>-->
-            <el-form-item label="密码" prop="stuPassword">
-              <!--<el-select v-model="selectForm.courses" filterable placeholder="请选修一本我有的秘籍">-->
-                <!--<el-option-->
-                  <!--v-for="item in courses"-->
-                  <!--:key="item.Id"-->
-                  <!--:label="item.Title"-->
-                  <!--:value="item.Id"-->
-                <!--&gt;</el-option>-->
-              <!--</el-select>-->
-              <el-input type="passward" v-model="selectForm.stuPassword" auto-complete="off" style="width: 188px"></el-input>
+            <el-form-item label="密码" prop="stuPassword" >
+              <el-input type="passward" v-model="selectForm.stuPassword" auto-complete="off" style="width: 188px" show-password></el-input>
             </el-form-item>
             <el-form-item label="联系方式" prop="stuPhone">
               <!--<el-select v-model="selectForm.courses" filterable placeholder="请选修一本我有的秘籍">-->
@@ -73,16 +56,15 @@
     name: "register",
     data() {
       return {
-        name: "liudaxia",
+        // name: "lisa",
         stuUsername: [],
         stuPassword: [],
         stuPhone:[],
         stuInter: [
-          { stuInter: "篮球", value: 0 },
-          { stuInter: "足球", value: 1 },
-          { stuInter: "体能", value: 2 },
-          { stuInter: "田径", value: 3 },
-          { stuInter: "旱冰", value: 4 }
+          { stuInter: "篮球课", value: 0 },
+          { stuInter: "足球课", value: 1 },
+          { stuInter: "体能课", value: 2 },
+          { stuInter: "轮滑课", value: 3 },
         ],
         selectForm: {
           stuUsername: "",
@@ -111,7 +93,8 @@
               required:true,
               message:"请输入你的联系方式",
               trigger: "change"
-            }
+            },
+            {min: 11, max: 11, message: "请输入11位的手机号码", trigger: "blur"}
           ]
 
         }
@@ -119,13 +102,13 @@
     },
     methods: {
       onSubmit() {
-        if (this.selectForm.stuUsername== "") {
+        if (this.selectForm.stuUsername=== "") {
           return this.$message({
             message: "请阁下留下您的名字",
             type: "warning"
           });
         }
-        if (this.selectForm.stuPassword == "") {
+        if (this.selectForm.stuPassword === "") {
           return this.$message({
             message: "请填写密码",
             type: "warning"
@@ -137,7 +120,7 @@
             type: "warning"
           });
         }
-        if(this.selectForm.stuPhone == ""){
+        if(this.selectForm.stuPhone === ""){
           return this.$message({
             message:"请填写您的联系方式",
             type: "warning"
@@ -147,61 +130,54 @@
           stuUsername: this.selectForm.stuUsername,
           stuPassword: this.selectForm.stuPassword,
           stuTell:this.selectForm.stuPhone,
-          interest: this.selectForm.stuInter
+          interest: this.stuInter[this.selectForm.stuInter].stuInter,
         };
         this.axios
-          .post("http://localhost:8004/Enrollments/Create", qs.stringify(strData))
+          .post("http://112.124.29.52:8081/stu/register", qs.stringify(strData))
           .then(result => {
             if (result.data == 'success') {
-              this.$notify({
-                id: "",
-                title: "注册成功(*￣︶￣)，",
+              this.$message({
+                // id: "",
+                // title: "注册成功(*￣︶￣)，",
                 message: "注册成功，请登录",
-                position: 'top-left',
+                // position: 'top-left',
                 type: "success"
               });
-              this.$router.push('/enrollments');
-              this.getStudentData();
+              this.$router.push('/login');
               this.resetForm("selectForm");
+            }
+            else
+            {
+              this.$message({
+                message: "注册失败o(╥﹏╥)o",
+                type: "danger"
+              });
             }
           })
           .catch(err => {
             this.$message({
-              message: "注册失败o(╥﹏╥)o",
+              message: "注册失败o(╥﹏╥)o"+err+'。',
               type: "danger"
             });
           });
       },
       ToLogin(){
-        this.$router.push('/enrollments')
+        this.$router.push('/login')
       },
       // 重置表单
       resetForm(formName) {
         this.$refs[formName].resetFields();
       },
-      goBack () {
-        this.$root.role=-1;
-        sessionStorage.clear();
-        window.history.back();
-      },
+
     },
     created() {
-    },
-    mounted() {
-      if (window.history && window.history.pushState) {
-        // 向历史记录中插入了当前页
-        history.pushState(null, null, document.URL);
-        window.addEventListener('popstate', this.goBack, false);
-      }
-    },
-    destroyed () {
-      window.removeEventListener('popstate', this.goBack, false);
-    },
+      this.$root.levelid = 3;
+    }
   };
 </script>
 <style lang="less" scoped>
   .register {
-    background-image: url("/static/images/bgnezha.jpg");
+    background-image: url("/static/images/background.jpg");
     position: fixed;
     top: 0;
     left: 0;
